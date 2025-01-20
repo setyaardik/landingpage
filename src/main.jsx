@@ -13,7 +13,15 @@ import InstagramIcon from "./images/instagram-icon.png";
 import FacebookIcon from "./images/facebook-icon.png";
 
 const Header = () => (
-  <header className="bg-red-700 text-white py-4 shadow-md" style={{ backgroundImage: `url(${BatikBackground})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+  <header
+    className="text-white py-4 shadow-md rounded-b-xl"
+    style={{
+      backgroundImage: `url(${BatikBackground})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backdropFilter: "blur(5px)",
+    }}
+  >
     <div className="container mx-auto flex items-center justify-between px-4">
       <div className="flex items-center gap-4">
         <img
@@ -28,8 +36,8 @@ const Header = () => (
 );
 
 const CitySection = () => (
-  <div className="bg-gradient-to-b from-red-500 via-orange-500 to-yellow-400 text-white text-center py-16">
-    <h1 className="text-4xl font-bold mb-6 drop-shadow-lg">KOTA SEMARANG</h1>
+  <div className="bg-gradient-to-r from-orange-100 via-red-100 to-orange-200 text-white text-center py-16">
+    <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">KOTA SEMARANG</h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
@@ -64,14 +72,14 @@ const Section = ({ title, description, image }) => (
 );
 
 const Footer = () => (
-  <footer className="bg-gradient-to-r from-red-800 via-red-700 to-red-600 text-white py-8">
+  <footer className="bg-gradient-to-r from-red-800 via-red-700 to-red-600 text-white py-8 rounded-t-xl">
     <div className="container mx-auto text-center px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
           <h3 className="text-lg font-bold mb-2">Sosial Media</h3>
           <div className="flex justify-center gap-4">
             <a
-              href="https://www.instagram.com/prppjateng/"
+              href="https://www.instagram.com/grandmaerakaca/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80"
@@ -79,7 +87,7 @@ const Footer = () => (
               <img src={InstagramIcon} alt="Instagram" className="w-8 h-8" />
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=100034311267235"
+              href="https://web.facebook.com/GrandMaerakaca/?_rdc=1&_rdr#"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80"
@@ -91,7 +99,7 @@ const Footer = () => (
         <div>
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
-            <li>Telepon: +62 812 3456 7890</li>
+            <li>Telepon: 024-7617433</li>
             <li>Email: info@ptpp-jateng.com</li>
             <li>Website: <a href="https://www.ptpp-jateng.com" target="_blank" rel="noopener noreferrer" className="hover:underline">www.ptpp-jateng.com</a></li>
           </ul>
