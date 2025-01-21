@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabpemalang/pemalang.png";
-import Makanan from "../images/kabpemalang/Makanan.png";
-import Budaya from "../images/kabpemalang/budaya.png";
-import Wisata from "../images/kabpemalang/wisata.png";
+import Anjungan from "../images/kabkendal/anjungan.png";
+import Makanan from "../images/kabkendal/makanan.png";
+import Tradisi from "../images/kabkendal/tradisi.png";
+import Wisata from "../images/kabkendal/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -51,21 +51,18 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN PEMALANG
+      KABUPATEN KENDAL
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
           src={Anjungan}
-          alt="Anjungan Kabupaten Pemalang"
+          alt="Anjungan Kabupaten Kendal"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Pada abad ke-16, Pemalang merupakan salah satu dari 14 daerah merdeka di Pulau Jawa yang dipimpin oleh seorang pangeran atau raja. Namun, kemudian wilayah ini ditaklukkan oleh Kesultanan Mataram dan menjadi daerah vasal yang diperintah oleh pangeran atau raja vasal. 
-Asal-usul nama "Pemalang" diyakini berasal dari kata "pe" yang dalam bahasa Jawa menunjukkan tempat, dan "malang" yang merujuk pada nama tokoh Raden Joko Malang atau Raden Sambungyudha, sehingga "Pemalang" berarti tempat yang dimiliki atau dikuasai oleh Raden Joko Malang. 
-Hari Jadi Kabupaten Pemalang ditetapkan pada tanggal 24 Januari 1575, berdasarkan Peraturan Daerah Kabupaten Dati II Pemalang Nomor 9 Tahun 1996. Penetapan ini didasarkan pada perhitungan surya sengkala "Lunguding Sabdo Wangsiting Gusti" yang memiliki nilai tahun 1575.
-      </p>
+      Nama Kendal sudah ada sejak Kerajaan Demak dengan sebutan seperti Kendalpura, Kontali, atau Kentali. Dalam Babad Tanah Jawi, nama Kendal berasal dari Pohon Kendal. Kisahnya berkaitan dengan Sunan Katong dan Empu Pakuwojo, seorang sakti yang pernah menjadi pejabat bawahan Majapahit. Sunan Katong datang ke Kendal untuk menyebarkan Islam dan menantang Pakuwojo beradu kesaktian, dengan syarat jika kalah, Pakuwojo harus masuk Islam. Setelah pertarungan panjang, Pakuwojo terdesak dan bersembunyi di dalam lubang pohon besar bernama Kendal, yang berarti penerang.      </p>
     </div>
   </div>
 );
@@ -153,20 +150,21 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
-      title="Makanan Khas"
-      description="Nasi grombyang, kuliner khas Pemalang, terdiri dari nasi, daging sapi, dan kuah gurih yang dominan, membuatnya terlihat bergoyang saat disajikan. Hidangan ini sering dinikmati dengan sate kerbau dan memiliki cita rasa khas dari rempah keluwak."
-      image={Makanan}
-    />
-    <Section
-      title="Kebudayaan"
-      description="Kuntulan mulai dikenal di Pemalang pada awal abad ke-20, bertepatan dengan masa pergerakan kebangsaan. Awalnya, kuntulan merupakan kegiatan bela diri yang diiringi alunan rebana, pukulan bedug, serta lantunan salawat Nabi, sehingga memiliki unsur kesenian dan keagamaan. Setelah kemerdekaan, kuntulan bertransformasi menjadi sarana hiburan yang hingga kini masih dipentaskan dalam berbagai acara, seperti peringatan hari besar nasional, hajatan, dan penyambutan tamu resmi."
-      image={Budaya}
+      title="Tradisi"
+      description="Sedekah laut dilaksanakan setiap tahun sekali tepatnya pada bulan Muharam atau bulan Suro pada penanggalan Jawa.Tradisi persembahan laut ditujukan untuk mengungkapkan rasa Syukur dan terima kasih pada karunia dari Sang Pencipta."
+      image={Tradisi}
     />
     <Section
       title="Wisata"
-      description="Bukit Tangkeban di Pemalang menawarkan beragam wahana seru, mulai dari permainan anak, spot kekinian, hingga yang menantang adrenalin. Dengan pemandangan sejuk dan latar megah Gunung Slamet, tempat ini juga penuh spot foto instagramable.
-Lokasi Desa Nyalembang, Kecamatan Pulosari, Kabupaten Pemalang"
+      description="Salah satu wisata yang ada di Kabupaten Kendal yaitu Pantai Cahaya. Pantai Cahaya merupakan wisata edutainment, dimana rekreasi, hiburan dan edukasi dijadikan dalam satu tempat untuk dinikmati para wisatawan.
+Lokasi: Klampok, Sendangsikucing, Rowosari, Kendal.
+"
       image={Wisata}
+    />
+    <Section
+      title="Makanan Khas"
+      description="Salah satu makanan yang ada di Kabupaten Kendal yaitu Momoh. Momoh adalah makanan khas Kendal yang berasal dari Kaliwungu, salah satu desa di Kendal. Bahan utama momoh adalah daging sapi hingga jeroannya. Bagian jeroan yang sering digunakan, seperti jantung, koyor, kikil, limpa, babat, iso, hingga terpedo. Ada dua jenis momoh, yaitu momoh goreng dan momoh kuah"
+      image={Makanan}
     />
     <Footer />
   </div>

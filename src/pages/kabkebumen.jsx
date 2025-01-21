@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabpemalang/pemalang.png";
-import Makanan from "../images/kabpemalang/Makanan.png";
-import Budaya from "../images/kabpemalang/budaya.png";
-import Wisata from "../images/kabpemalang/wisata.png";
+import Anjungan from "../images/kabkebumen/anjungan.png";
+import Budaya from "../images/kabkebumen/budaya.png";
+import Tradisi from "../images/kabkebumen/tradisi.png";
+import Wisata from "../images/kabkebumen/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -51,21 +51,18 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN PEMALANG
+      KABUPATEN KEBUMEN
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
           src={Anjungan}
-          alt="Anjungan Kabupaten Pemalang"
+          alt="Anjungan Kabupaten Kebumen"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Pada abad ke-16, Pemalang merupakan salah satu dari 14 daerah merdeka di Pulau Jawa yang dipimpin oleh seorang pangeran atau raja. Namun, kemudian wilayah ini ditaklukkan oleh Kesultanan Mataram dan menjadi daerah vasal yang diperintah oleh pangeran atau raja vasal. 
-Asal-usul nama "Pemalang" diyakini berasal dari kata "pe" yang dalam bahasa Jawa menunjukkan tempat, dan "malang" yang merujuk pada nama tokoh Raden Joko Malang atau Raden Sambungyudha, sehingga "Pemalang" berarti tempat yang dimiliki atau dikuasai oleh Raden Joko Malang. 
-Hari Jadi Kabupaten Pemalang ditetapkan pada tanggal 24 Januari 1575, berdasarkan Peraturan Daerah Kabupaten Dati II Pemalang Nomor 9 Tahun 1996. Penetapan ini didasarkan pada perhitungan surya sengkala "Lunguding Sabdo Wangsiting Gusti" yang memiliki nilai tahun 1575.
-      </p>
+      Kebumen, dahulu disebut Panjer, memiliki sejarah erat dengan Kesultanan Mataram Islam. Nama ini berasal dari "Kabumian," tempat tinggal Pangeran Mangkubumi yang melarikan diri pada 1677. Wilayah ini berkontribusi dalam penyerbuan Sultan Agung ke Batavia dan kaya akan warisan budaya dari berbagai era.</p>
     </div>
   </div>
 );
@@ -153,20 +150,21 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
-      title="Makanan Khas"
-      description="Nasi grombyang, kuliner khas Pemalang, terdiri dari nasi, daging sapi, dan kuah gurih yang dominan, membuatnya terlihat bergoyang saat disajikan. Hidangan ini sering dinikmati dengan sate kerbau dan memiliki cita rasa khas dari rempah keluwak."
-      image={Makanan}
-    />
-    <Section
-      title="Kebudayaan"
-      description="Kuntulan mulai dikenal di Pemalang pada awal abad ke-20, bertepatan dengan masa pergerakan kebangsaan. Awalnya, kuntulan merupakan kegiatan bela diri yang diiringi alunan rebana, pukulan bedug, serta lantunan salawat Nabi, sehingga memiliki unsur kesenian dan keagamaan. Setelah kemerdekaan, kuntulan bertransformasi menjadi sarana hiburan yang hingga kini masih dipentaskan dalam berbagai acara, seperti peringatan hari besar nasional, hajatan, dan penyambutan tamu resmi."
-      image={Budaya}
+      title="Tradisi"
+      description="Salah satu tradisi di kebumen yaitu Pengunduhan Sarang Burung Walet. Kegiatan pengunduhan sarang burung lawet dilaksanakan 4 kali dalam satu tahun pelaksanaannya  diawali dengan ritual doa, serta kesenian daerah berupa lengger, wayang kulit tanpa kelir di goa tiruan Pantai Karangbolong dengan lakon Rama Tambak."
+      image={Tradisi}
     />
     <Section
       title="Wisata"
-      description="Bukit Tangkeban di Pemalang menawarkan beragam wahana seru, mulai dari permainan anak, spot kekinian, hingga yang menantang adrenalin. Dengan pemandangan sejuk dan latar megah Gunung Slamet, tempat ini juga penuh spot foto instagramable.
-Lokasi Desa Nyalembang, Kecamatan Pulosari, Kabupaten Pemalang"
+      description="Pantai menganti menyuguhkan pemandangan indah pasir putih, laut biru, dan tebing karst. Sejak 2011, pantai ini populer sebagai destinasi wisata dengan fasilitas memadai.
+Lokasi Desa Karangduwur, Kecamatan Ayah, Kabupaten Kebumen 
+"
       image={Wisata}
+    />
+    <Section
+      title="Budaya"
+      description="Diciptakan pada tahun 1995 oleh seniman Kebumen. Menceritakan tentang aktifitas burung lawet dalam mencari makan sampai kembali ke sarangnya. Diperagakan minimal 2 orang penari perempuan."
+      image={Budaya}
     />
     <Footer />
   </div>

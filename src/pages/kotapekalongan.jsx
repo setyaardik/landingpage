@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabpemalang/pemalang.png";
-import Makanan from "../images/kabpemalang/Makanan.png";
-import Budaya from "../images/kabpemalang/budaya.png";
-import Wisata from "../images/kabpemalang/wisata.png";
+import Anjungan from "../images/kotapekalongan/anjungan.png";
+import Budaya from "../images/kotapekalongan/budaya.png";
+import Makanan from "../images/kotapekalongan/makanan.png";
+import Wisata from "../images/kotapekalongan/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -51,21 +51,18 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN PEMALANG
+      KOTA PEKALONGAN
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
           src={Anjungan}
-          alt="Anjungan Kabupaten Pemalang"
+          alt="Anjungan Kabupaten Pekalongan"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Pada abad ke-16, Pemalang merupakan salah satu dari 14 daerah merdeka di Pulau Jawa yang dipimpin oleh seorang pangeran atau raja. Namun, kemudian wilayah ini ditaklukkan oleh Kesultanan Mataram dan menjadi daerah vasal yang diperintah oleh pangeran atau raja vasal. 
-Asal-usul nama "Pemalang" diyakini berasal dari kata "pe" yang dalam bahasa Jawa menunjukkan tempat, dan "malang" yang merujuk pada nama tokoh Raden Joko Malang atau Raden Sambungyudha, sehingga "Pemalang" berarti tempat yang dimiliki atau dikuasai oleh Raden Joko Malang. 
-Hari Jadi Kabupaten Pemalang ditetapkan pada tanggal 24 Januari 1575, berdasarkan Peraturan Daerah Kabupaten Dati II Pemalang Nomor 9 Tahun 1996. Penetapan ini didasarkan pada perhitungan surya sengkala "Lunguding Sabdo Wangsiting Gusti" yang memiliki nilai tahun 1575.
-      </p>
+      Kota Pekalongan di Jawa Tengah telah dikenal sebagai pusat perdagangan sejak abad ke-12, tercatat dalam Dinasti Song sebagai pelabuhan penting bernama "Pukalong." Pada masa Hindia Belanda, kota ini berkembang menjadi pusat industri batik yang dipengaruhi budaya lokal, Tionghoa, dan Arab. Setelah kemerdekaan, Pekalongan ditetapkan sebagai kota administratif pada 14 Agustus 1950 dan tetap dikenal sebagai "Kota Batik."</p>
     </div>
   </div>
 );
@@ -153,20 +150,21 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
-      title="Makanan Khas"
-      description="Nasi grombyang, kuliner khas Pemalang, terdiri dari nasi, daging sapi, dan kuah gurih yang dominan, membuatnya terlihat bergoyang saat disajikan. Hidangan ini sering dinikmati dengan sate kerbau dan memiliki cita rasa khas dari rempah keluwak."
-      image={Makanan}
-    />
-    <Section
-      title="Kebudayaan"
-      description="Kuntulan mulai dikenal di Pemalang pada awal abad ke-20, bertepatan dengan masa pergerakan kebangsaan. Awalnya, kuntulan merupakan kegiatan bela diri yang diiringi alunan rebana, pukulan bedug, serta lantunan salawat Nabi, sehingga memiliki unsur kesenian dan keagamaan. Setelah kemerdekaan, kuntulan bertransformasi menjadi sarana hiburan yang hingga kini masih dipentaskan dalam berbagai acara, seperti peringatan hari besar nasional, hajatan, dan penyambutan tamu resmi."
+      title="Budaya"
+      description="Batik Pekalongan adalah salah satu warisan budaya Indonesia yang paling terkenal. Batik ini dikenal dengan motif-motifnya yang khas dan penuh warna."
       image={Budaya}
     />
     <Section
       title="Wisata"
-      description="Bukit Tangkeban di Pemalang menawarkan beragam wahana seru, mulai dari permainan anak, spot kekinian, hingga yang menantang adrenalin. Dengan pemandangan sejuk dan latar megah Gunung Slamet, tempat ini juga penuh spot foto instagramable.
-Lokasi Desa Nyalembang, Kecamatan Pulosari, Kabupaten Pemalang"
+      description="pantai ini menawarkan berbagai fasilitas seperti kolam renang, menara pandang, skywalk, dan area bermain anak. Jam operasionalnya dari pukul 08.00 hingga 21.00 WIB
+Lokasi Jalan Pantai, Wonokerto, Panjang Wetan, Kecamatan Pekalongan Utara, Kota Pekalongan. "
       image={Wisata}
+    />
+    <Section
+      title="Makanan Khas"
+      description="pantai ini menawarkan berbagai fasilitas seperti kolam renang, menara pandang, skywalk, dan area bermain anak. Jam operasionalnya dari pukul 08.00 hingga 21.00 WIB
+Lokasi Jalan Pantai, Wonokerto, Panjang Wetan, Kecamatan Pekalongan Utara, Kota Pekalongan."
+      image={Makanan}
     />
     <Footer />
   </div>

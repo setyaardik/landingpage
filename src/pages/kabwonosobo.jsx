@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabpemalang/pemalang.png";
-import Makanan from "../images/kabpemalang/Makanan.png";
-import Budaya from "../images/kabpemalang/budaya.png";
-import Wisata from "../images/kabpemalang/wisata.png";
+import Anjungan from "../images/kabwonosobo/anjungan.png";
+import Makanan from "../images/kabwonosobo/makanan.png";
+import Tradisi from "../images/kabwonosobo/tradisi.png";
+import AlatMusik from "../images/kabwonosobo/alatmusik.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -51,20 +51,18 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN PEMALANG
+      KABUPATEN WONOSOBO
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
           src={Anjungan}
-          alt="Anjungan Kabupaten Pemalang"
+          alt="Anjungan Kabupaten Wonosobo"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Pada abad ke-16, Pemalang merupakan salah satu dari 14 daerah merdeka di Pulau Jawa yang dipimpin oleh seorang pangeran atau raja. Namun, kemudian wilayah ini ditaklukkan oleh Kesultanan Mataram dan menjadi daerah vasal yang diperintah oleh pangeran atau raja vasal. 
-Asal-usul nama "Pemalang" diyakini berasal dari kata "pe" yang dalam bahasa Jawa menunjukkan tempat, dan "malang" yang merujuk pada nama tokoh Raden Joko Malang atau Raden Sambungyudha, sehingga "Pemalang" berarti tempat yang dimiliki atau dikuasai oleh Raden Joko Malang. 
-Hari Jadi Kabupaten Pemalang ditetapkan pada tanggal 24 Januari 1575, berdasarkan Peraturan Daerah Kabupaten Dati II Pemalang Nomor 9 Tahun 1996. Penetapan ini didasarkan pada perhitungan surya sengkala "Lunguding Sabdo Wangsiting Gusti" yang memiliki nilai tahun 1575.
+      Kabupaten Wonosobo didirikan pada abad ke-17 oleh Kiai Kolodete, Kiai Karim, dan Kiai Walik, yang membuka wilayah Dieng, Kalibeber, dan Kota Wonosobo. Nama "Wonosobo" berasal dari Dusun Wanasaba di Selomerto. Saat Perang Diponegoro (1825-1830), Wonosobo menjadi basis perjuangan melawan Belanda, dipimpin Tumenggung Setjonegoro. Pada 24 Juli 1825, ia memindahkan pusat pemerintahan ke Kota Wonosobo, yang kini diperingati sebagai Hari Jadi Kabupaten Wonosobo.
       </p>
     </div>
   </div>
@@ -153,20 +151,19 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
+      title="Tradisi"
+      description="Tradisi yang masih dipertahankan di Wonosobo antara lain wayang othok obrol dan Tari Daeng, keduanya telah memperoleh sertifikat Hak Kekayaan Intelektual (HKI) dari Kementerian Hukum dan HAM."
+      image={Tradisi}
+    />
+    <Section
+      title="Alat Musik"
+      description="Bundengan merupakan alat musik tradisional khas Wonosobo. Bandengan berasal dari kowangan, yaitu alat musik berteduh penggembala bebek saat hujan. Kowangan dipasangi senar sehingga menghasilkan suara yang nyaring."
+      image={AlatMusik}
+    />
+    <Section
       title="Makanan Khas"
-      description="Nasi grombyang, kuliner khas Pemalang, terdiri dari nasi, daging sapi, dan kuah gurih yang dominan, membuatnya terlihat bergoyang saat disajikan. Hidangan ini sering dinikmati dengan sate kerbau dan memiliki cita rasa khas dari rempah keluwak."
+      description="Tempe kemul adalah makanan yang berasal dari Wonosobo, Jawa Tengah yang terbuat dari tempe yang digoreng dengan dibalut gandum, pati/tepung singkong juga tepung beras dan biasanya ditambah daun kucai untuk pelengkap"
       image={Makanan}
-    />
-    <Section
-      title="Kebudayaan"
-      description="Kuntulan mulai dikenal di Pemalang pada awal abad ke-20, bertepatan dengan masa pergerakan kebangsaan. Awalnya, kuntulan merupakan kegiatan bela diri yang diiringi alunan rebana, pukulan bedug, serta lantunan salawat Nabi, sehingga memiliki unsur kesenian dan keagamaan. Setelah kemerdekaan, kuntulan bertransformasi menjadi sarana hiburan yang hingga kini masih dipentaskan dalam berbagai acara, seperti peringatan hari besar nasional, hajatan, dan penyambutan tamu resmi."
-      image={Budaya}
-    />
-    <Section
-      title="Wisata"
-      description="Bukit Tangkeban di Pemalang menawarkan beragam wahana seru, mulai dari permainan anak, spot kekinian, hingga yang menantang adrenalin. Dengan pemandangan sejuk dan latar megah Gunung Slamet, tempat ini juga penuh spot foto instagramable.
-Lokasi Desa Nyalembang, Kecamatan Pulosari, Kabupaten Pemalang"
-      image={Wisata}
     />
     <Footer />
   </div>
