@@ -3,16 +3,17 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./index.css";
+import "../index.css";
 
-import Logo from "./images/logo.png";
-import BatikBackground from "./images/batik-background.png";
-import AnjunganImage from "./images/anjungan-semarang.png";
-import TahuGimbal from "./images/tahu-gimbal.png";
-import Dugderan from "./images/dugderan.png";
-import Wisata from "./images/wisata.png";
-import InstagramIcon from "./images/instagram-icon.png";
-import FacebookIcon from "./images/facebook-icon.png";
+import Logo from "../images/logo.png";
+import InstagramIcon from "../images/instagram-icon.png";
+import FacebookIcon from "../images/facebook-icon.png";
+import BatikBackground from "../images/batik-background.png";
+
+import AnjunganImage from "../images/kotasemarang/anjungan-semarang.png";
+import TahuGimbal from "../images/kotasemarang/tahu-gimbal.png";
+import Dugderan from "../images/kotasemarang/dugderan.png";
+import Wisata from "../images/kotasemarang/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
