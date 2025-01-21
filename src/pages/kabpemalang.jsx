@@ -9,6 +9,7 @@ import Logo from "../images/logo.png";
 import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
+
 import AnjunganImage from "../images/kotasemarang/anjungan-semarang.png";
 import TahuGimbal from "../images/kotasemarang/tahu-gimbal.png";
 import Dugderan from "../images/kotasemarang/dugderan.png";
@@ -50,7 +51,7 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KOTA SEMARANG
+      KABUPATEN PEMALANG
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
