@@ -34,7 +34,7 @@ const Header = () => (
       <div className="flex items-center gap-4">
         <img
           src={Logo}
-          alt="Logo PTPP Jawa Tengah"
+          alt="Logo prpp Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
         <h1 className="text-2xl font-semibold drop-shadow-lg">
@@ -125,11 +125,13 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
+
             <li>Email: info@ptpp-jateng.com</li>
             <li>
               Website:{" "}
               <a
                 href="https://www.ptpp-jateng.com"
+
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
