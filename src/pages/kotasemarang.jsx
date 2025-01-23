@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -61,6 +62,7 @@ const CitySection = () => (
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
+
       Kota Semarang bermula sebagai pelabuhan Pragota pada abad ke-8 M. Nama
 "Semarang" berasal dari pohon Asem Arang, dan resmi menjadi kabupaten pada 2 Mei
 1547 di era Sultan Hadiwijaya. Semarang diserahkan ke VOC pada 1678, menjadi bagian
@@ -177,3 +179,4 @@ masyarakat Semarang."
 );
 
 export default Home;
+

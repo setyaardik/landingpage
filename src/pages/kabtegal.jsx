@@ -10,7 +10,7 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-// import Anjungan from "../images/kabtegal/anjungan.png";
+import Anjungan from "../images/kabtegal/anjungan.png";
 import Makanan from "../images/kabtegal/makanan.png";
 import Tradisi from "../images/kabtegal/tradisi.png";
 import Wisata from "../images/kabtegal/wisata.png";
@@ -56,7 +56,7 @@ const CitySection = () => (
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
-        //   src={Anjungan}
+          src={Anjungan}
           alt="Anjungan Kabupaten Sragen"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />

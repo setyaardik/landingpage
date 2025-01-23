@@ -62,7 +62,14 @@ const CitySection = () => (
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Kota Pekalongan di Jawa Tengah telah dikenal sebagai pusat perdagangan sejak abad ke-12, tercatat dalam Dinasti Song sebagai pelabuhan penting bernama "Pukalong." Pada masa Hindia Belanda, kota ini berkembang menjadi pusat industri batik yang dipengaruhi budaya lokal, Tionghoa, dan Arab. Setelah kemerdekaan, Pekalongan ditetapkan sebagai kota administratif pada 14 Agustus 1950 dan tetap dikenal sebagai "Kota Batik."</p>
+        Kota Pekalongan di Jawa Tengah telah dikenal sebagai pusat perdagangan
+        sejak abad ke-12, tercatat dalam Dinasti Song sebagai pelabuhan penting
+        bernama "Pukalong." Pada masa Hindia Belanda, kota ini berkembang
+        menjadi pusat industri batik yang dipengaruhi budaya lokal, Tionghoa,
+        dan Arab. Setelah kemerdekaan, Pekalongan ditetapkan sebagai kota
+        administratif pada 14 Agustus 1950 dan tetap dikenal sebagai "Kota
+        Batik."
+      </p>
     </div>
   </div>
 );

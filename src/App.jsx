@@ -15,6 +15,12 @@ import KabPekalongan from "./pages/kabpekalongan";
 import KabBatang from "./pages/kabbatang";
 import KabBlora from "./pages/kabblora";
 import KabBoyolali from "./pages/kabboyolali";
+import KabPati from "./pages/kabpati";
+import KabPurworejo from "./pages/kabpurworejo";
+import KotaTegal from "./pages/kotategal";
+import KabRembang from "./pages/kabrembang";
+import KabJepara from "./pages/kabjepara";
+import KabWonogiri from "./pages/kabwonogiri";
 
 const App = () => (
   <Router>
@@ -27,6 +33,7 @@ const App = () => (
       <Route path="/kabwonosobo" element={<KabWonosobo />} />
       <Route path="/kabkendal" element={<KabKendal />} />
       <Route path="/kotapekalongan" element={<KotaPekalongan />} />
+      <Route path="/kabpati" element={<KabPati />} />
       <Route path="/kabbanjarnegara" element={<KabBanjarnegara />} />
       <Route path="/kabbanyumas" element={<KabBanyumas />} />
       <Route path="/kabbrebes" element={<KabBrebes />} />
@@ -34,7 +41,11 @@ const App = () => (
       <Route path="/kabbatang" element={<KabBatang />} />
       <Route path="/kabblora" element={<KabBlora />} />
       <Route path="/kabboyolali" element={<KabBoyolali />} />
-      <Route path="/kabsemarang" element={<KabSemarang />} />
+      <Route path="/kabpurworejo" element={<KabPurworejo />} />
+      <Route path="/kotategal" element={<KotaTegal />} />
+      <Route path="/kabrembang" element={<KabRembang />} />
+      <Route path="/kabjepara" element={<KabJepara />} />
+      <Route path="/kabwonogiri" element={<KabWonogiri />} />
     </Routes>
   </Router>
 );
