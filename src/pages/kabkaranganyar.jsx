@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabtegal/anjungan.png";
-import Makanan from "../images/kabtegal/makanan.png";
-import Tradisi from "../images/kabtegal/tradisi.png";
-import Wisata from "../images/kabtegal/wisata.png";
+import AnjunganImage from "../images/kabkaranganyar/anjungan-kabkaranganyar.jpg";
+import Tradisi from "../images/kabkaranganyar/tradisi.png";
+import Makanan from "../images/kabkaranganyar/makanan.png";
+import Wisata from "../images/kabkaranganyar/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -34,7 +34,7 @@ const Header = () => (
       <div className="flex items-center gap-4">
         <img
           src={Logo}
-          alt="Logo PTPP Jawa Tengah"
+          alt="Logo prpp Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
         <h1 className="text-2xl font-semibold drop-shadow-lg">
@@ -51,18 +51,23 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN TEGAL
+      KABUPATEN KARANGANYAR
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
-          src={Anjungan}
-          alt="Anjungan Kabupaten Sragen"
+          src={AnjunganImage}
+          alt="Anjungan Kabupaten Demak"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Nama Tegal berasal dari kata Tetegal yang berarti tanah subur. Kabupaten Tegal didirikan pada 18 Mei 1601 oleh Ki Gede Sebayu, seorang keturunan Majapahit. Setelah membantu merebut kembali Keraton Pajang, ia bergerak ke Tegal, mengembangkan pertanian, dan memperluas lahan. Atas jasanya, Ki Gede Sebayu diangkat menjadi Juru Demung oleh Panembahan Senopati, menandai berdirinya Kabupaten Tegal.
+        Kabupaten Karanganyar didirikan pada 19 April 1945 oleh Raden Mas Said
+        (Pangeran Sambernyawa). Nama "Karanganyar" berasal dari istilah Jawa
+        yang berarti tempat baru dengan kewibawaan dan kemuliaan. Awalnya,
+        Karanganyar adalah dukuh kecil di Kasunanan Surakarta, namun setelah
+        Perjanjian Giyanti 1755, wilayah ini berada di bawah Kasultanan
+        Yogyakarta yang dipimpin Hamengkubuwana I.
       </p>
     </div>
   </div>
@@ -123,16 +128,16 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@ptpp-jateng.com</li>
+            <li>Email: info@prpp-jateng.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.ptpp-jateng.com"
+                href="https://www.prpp-jateng.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.ptpp-jateng.com
+                www.prpp-jateng.com
               </a>
             </li>
           </ul>
@@ -152,17 +157,17 @@ const Home = () => (
     <CitySection />
     <Section
       title="Tradisi"
-      description="Salah satu tradisi yang ada di Kabupaten Tegal yaitu Wayang Golek Cepak Tegalan, seni tradisional Tegal, dibuat dari kayu kedondong jaran yang tahan lama dan dihias cat semprot. Seni ini dipopulerkan oleh dalang Ki Enthus Susmono, yang menciptakan tokoh Lupit dan Slenteng sebagai maskot daerah Tegal."
+      description="Dhukutan adalah upacara tradisional ini dilakukan pada hari Selasa Kliwon Wuku Dukut, itulah asal usul mengapa upacara tersebut dinamakan upacara dhukutan. Ritual tradisional ini sebenarnya merupakan ritual bersih desa."
       image={Tradisi}
     />
     <Section
-      title="Makanan Khas"
-      description="Tahu aci adalah kuliner khas Tegal berbahan dasar tahu, aci, dan bumbu. Tahu digoreng kering hingga tekstur luarnya crispy, sedangkan bagian dalamnya lembut dan kenyal. Selain untuk ngemil, tahu aci biasanya juga untuk oleh-oleh."
+      title="Makanan"
+      description="Soto Karang memiliki bahan utamanya adalah tulang iga sapi, yang memberikan aroma khas dan menggugah selera. Soto Karang dikenal karena bumbunya yang segar dan kaya rempah."
       image={Makanan}
     />
     <Section
       title="Wisata"
-      description="Salah satu wisata yang ada di Kabupaten Tegal yaitu Waduk Cacaban. Waduk tak hanya digunakan untuk menyimpan air, tapi juga sebagai tempat wisata. Keindahan Waduk Cacaban tak dapat dimungkiri lagi, apalagi saat matahari terbit. Semakin menambah daya tarik, ada hutan yang mengelilingi area waduk. Tak hanya itu, tempat ini dilengkapi warung apung, kapal wisata, hingga area pemancingan."
+      description="Lawu Park adalah tempat wisata di kaki Gunung Lawu yang menyuguhkan keindahan alam, dilengkapi dengan berbagai fasilitas, wahana, dan konsep wisata alam kekinian. Berlokasi di Gondosuli Kidul, Gondosuli, Kecamatan Tawangmangu, Kabupaten Karanganyar, Jawa Tengah, destinasi ini menjadi pilihan ideal untuk menikmati suasana pegunungan yang asri."
       image={Wisata}
     />
     <Footer />

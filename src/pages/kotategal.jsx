@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabtegal/anjungan.png";
-import Makanan from "../images/kabtegal/makanan.png";
-import Tradisi from "../images/kabtegal/tradisi.png";
-import Wisata from "../images/kabtegal/wisata.png";
+import Anjungan from "../images/kotategal/anjungan.png";
+import Tradisi from "../images/kotategal/tradisi.png";
+import Makanan from "../images/kotategal/makanan.png";
+import Wisata from "../images/kotategal/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -51,19 +51,18 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN TEGAL
+      KOTA TEGAL
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
           src={Anjungan}
-          alt="Anjungan Kabupaten Sragen"
+          alt="Anjungan Kota Tegal"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Nama Tegal berasal dari kata Tetegal yang berarti tanah subur. Kabupaten Tegal didirikan pada 18 Mei 1601 oleh Ki Gede Sebayu, seorang keturunan Majapahit. Setelah membantu merebut kembali Keraton Pajang, ia bergerak ke Tegal, mengembangkan pertanian, dan memperluas lahan. Atas jasanya, Ki Gede Sebayu diangkat menjadi Juru Demung oleh Panembahan Senopati, menandai berdirinya Kabupaten Tegal.
-      </p>
+      Kota Tegal didirikan oleh Ki Gede Sebayu, seorang bangsawan yang datang ke tepian Sungai Gung dan mengembangkan pertanian dengan memperluas lahan serta membangun saluran irigasi. Selain itu, dia juga mengajarkan agama Islam kepada masyarakat. Atas jasanya, Ki Gede Sebayu diangkat sebagai pemimpin Tegal pada 12 April 1580, yang kemudian ditetapkan sebagai hari jadi Kota Tegal berdasarkan Peraturan Daerah No.5 tahun 1988.</p>
     </div>
   </div>
 );
@@ -152,17 +151,17 @@ const Home = () => (
     <CitySection />
     <Section
       title="Tradisi"
-      description="Salah satu tradisi yang ada di Kabupaten Tegal yaitu Wayang Golek Cepak Tegalan, seni tradisional Tegal, dibuat dari kayu kedondong jaran yang tahan lama dan dihias cat semprot. Seni ini dipopulerkan oleh dalang Ki Enthus Susmono, yang menciptakan tokoh Lupit dan Slenteng sebagai maskot daerah Tegal."
+      description="Kota tegal sendiri juga memiliki tradisi yang yang tidak kalah uniknya dengan kabupatennya sendiri yaitu kabupaten tegal, salah satunya adalah makna sedekah laut adalah sebuah ungkapan rasa syukur dan doa agar Tuhan YME selalu bermurah hati dan memberkahi kita, khususnya para nelayan."
       image={Tradisi}
     />
     <Section
       title="Makanan Khas"
-      description="Tahu aci adalah kuliner khas Tegal berbahan dasar tahu, aci, dan bumbu. Tahu digoreng kering hingga tekstur luarnya crispy, sedangkan bagian dalamnya lembut dan kenyal. Selain untuk ngemil, tahu aci biasanya juga untuk oleh-oleh."
+      description="Salah satu makanan khas Kota Tegal adalah Soto Tauco. Sesuai namanya, ciri khas soto Tegal ini adalah sambal tauco. Soto berkuah pekat ini memiliki perpaduan rasa gurih, pedas, manis, dan sedikit asam. Biasanya, bila makan soto tauco di Tegal, pedagang akan menyajikannya dalam mangkuk kecil dengan sendok bebek."
       image={Makanan}
     />
     <Section
       title="Wisata"
-      description="Salah satu wisata yang ada di Kabupaten Tegal yaitu Waduk Cacaban. Waduk tak hanya digunakan untuk menyimpan air, tapi juga sebagai tempat wisata. Keindahan Waduk Cacaban tak dapat dimungkiri lagi, apalagi saat matahari terbit. Semakin menambah daya tarik, ada hutan yang mengelilingi area waduk. Tak hanya itu, tempat ini dilengkapi warung apung, kapal wisata, hingga area pemancingan."
+      description="Salah satu wisata yang ada di Kota Tegal adalah Pantai Alam Indah (PAI). Pantai Alam Indah merupakan tempat wisata dengan pemandangan alam pantai yang indah.Bibir pantai cukup luas sehingga dapat digunakan sebagai tempat untuk bermain, seperti bermain pasir khususnya untuk anak-anak maupun jalan-jalan disekitar pantai. Kawasan pantai juga terdapat museum bahari yang menyimpan senjata berat militer."
       image={Wisata}
     />
     <Footer />

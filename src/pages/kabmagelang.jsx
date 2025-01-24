@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabtegal/anjungan.png";
-import Makanan from "../images/kabtegal/makanan.png";
-import Tradisi from "../images/kabtegal/tradisi.png";
-import Wisata from "../images/kabtegal/wisata.png";
+import Anjungan from "../images/kabmagelang/anjungan.jpg";
+import Makanan from "../images/kabmagelang/makanan.png";
+import Tradisi from "../images/kabmagelang/tradisi.png";
+import Wisata from "../images/kabmagelang/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -51,18 +51,23 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN TEGAL
+      KABUPATEN MAGELANG
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
           src={Anjungan}
-          alt="Anjungan Kabupaten Sragen"
+          alt="Anjungan Kabupaten Kendal"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Nama Tegal berasal dari kata Tetegal yang berarti tanah subur. Kabupaten Tegal didirikan pada 18 Mei 1601 oleh Ki Gede Sebayu, seorang keturunan Majapahit. Setelah membantu merebut kembali Keraton Pajang, ia bergerak ke Tegal, mengembangkan pertanian, dan memperluas lahan. Atas jasanya, Ki Gede Sebayu diangkat menjadi Juru Demung oleh Panembahan Senopati, menandai berdirinya Kabupaten Tegal.
+        Kabupaten Magelang berdiri pada tahun 1812 setelah Letnan Gubernur
+        Sir Thomas Stamford Raffles menunjuk Ngabei Danuningrat sebagai bupati
+        pertama dengan gelar Adipati Danuningrat I. Penunjukan ini terjadi
+        setelah wilayah Kedu diserahkan oleh Kesultanan Yogyakarta kepada
+        Inggris. Kabupaten Magelang memiliki sejarah panjang sebagai bagian
+        penting dari Kesultanan Mataram dan masa kolonial.
       </p>
     </div>
   </div>
@@ -152,17 +157,17 @@ const Home = () => (
     <CitySection />
     <Section
       title="Tradisi"
-      description="Salah satu tradisi yang ada di Kabupaten Tegal yaitu Wayang Golek Cepak Tegalan, seni tradisional Tegal, dibuat dari kayu kedondong jaran yang tahan lama dan dihias cat semprot. Seni ini dipopulerkan oleh dalang Ki Enthus Susmono, yang menciptakan tokoh Lupit dan Slenteng sebagai maskot daerah Tegal."
+      description="Sungkem tlompak merupakan tradisi yang digelar oleh warga Desa Banyusidi yang tinggal di lereng Gunung Merbabu. Mereka mengadakannya setiap momen idulfitri untuk mengirim doa dan memohon keselamatan kepada Yang Mahakuasa."
       image={Tradisi}
     />
     <Section
       title="Makanan Khas"
-      description="Tahu aci adalah kuliner khas Tegal berbahan dasar tahu, aci, dan bumbu. Tahu digoreng kering hingga tekstur luarnya crispy, sedangkan bagian dalamnya lembut dan kenyal. Selain untuk ngemil, tahu aci biasanya juga untuk oleh-oleh."
+      description="Nasi goreng magelangan merupakan paduan nasi dan mie goreng yang memiliki rasa manis gurih medok khas Jawa dan biasanya disajikan dengan kerupuk. Istilah magelangan diberikan untuk mie dan nasi goreng yang diaduk bersamaan."
       image={Makanan}
     />
     <Section
       title="Wisata"
-      description="Salah satu wisata yang ada di Kabupaten Tegal yaitu Waduk Cacaban. Waduk tak hanya digunakan untuk menyimpan air, tapi juga sebagai tempat wisata. Keindahan Waduk Cacaban tak dapat dimungkiri lagi, apalagi saat matahari terbit. Semakin menambah daya tarik, ada hutan yang mengelilingi area waduk. Tak hanya itu, tempat ini dilengkapi warung apung, kapal wisata, hingga area pemancingan."
+      description="Candi Borobudur adalah candi Buddha terbesar di dunia yang dibangun pada masa Dinasti Sailendra antara tahun 780-840 M. Situs ini memiliki luas sekitar 2.500 meter persegi, dengan ukuran panjang 121,66 meter, lebar 121,38 meter, dan tinggi 35,40 meter. Lokasinya berada di Jalan Badrawati, Kecamatan Borobudur, Kabupaten Magelang, Jawa Tengah, dan menjadi warisan budaya dunia yang menakjubkan."
       image={Wisata}
     />
     <Footer />

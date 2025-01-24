@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabtegal/anjungan.png";
-import Makanan from "../images/kabtegal/makanan.png";
-import Tradisi from "../images/kabtegal/tradisi.png";
-import Wisata from "../images/kabtegal/wisata.png";
+import Anjungan from "../images/kabpati/anjungan.png";
+import Tradisi from "../images/kabpati/tradisi.png";
+import Tari from "../images/kabpati/tari.png";
+import Wisata from "../images/kabpati/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -51,19 +51,18 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN TEGAL
+      KABUPATEN PATI
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
           src={Anjungan}
-          alt="Anjungan Kabupaten Sragen"
+          alt="Anjungan Kabupaten Pati"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Nama Tegal berasal dari kata Tetegal yang berarti tanah subur. Kabupaten Tegal didirikan pada 18 Mei 1601 oleh Ki Gede Sebayu, seorang keturunan Majapahit. Setelah membantu merebut kembali Keraton Pajang, ia bergerak ke Tegal, mengembangkan pertanian, dan memperluas lahan. Atas jasanya, Ki Gede Sebayu diangkat menjadi Juru Demung oleh Panembahan Senopati, menandai berdirinya Kabupaten Tegal.
-      </p>
+      Kabupaten Pati adalah sebuah wilayah kabupaten yang terletak di Provinsi Jawa Tengah, Indonesia. Ibu kotanya adalah Kecamatan Pati. Kabupaten ini terkenal dengan semboyan Pati Bumi Mina Tani. Penduduk kabupaten Pati berjumlah 1.324.188 jiwa pada akhir tahun 2020,[4] dan 1.379.022 jiwa pada pertengahan tahun 2024.</p>
     </div>
   </div>
 );
@@ -151,19 +150,19 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
-      title="Tradisi"
-      description="Salah satu tradisi yang ada di Kabupaten Tegal yaitu Wayang Golek Cepak Tegalan, seni tradisional Tegal, dibuat dari kayu kedondong jaran yang tahan lama dan dihias cat semprot. Seni ini dipopulerkan oleh dalang Ki Enthus Susmono, yang menciptakan tokoh Lupit dan Slenteng sebagai maskot daerah Tegal."
-      image={Tradisi}
-    />
-    <Section
-      title="Makanan Khas"
-      description="Tahu aci adalah kuliner khas Tegal berbahan dasar tahu, aci, dan bumbu. Tahu digoreng kering hingga tekstur luarnya crispy, sedangkan bagian dalamnya lembut dan kenyal. Selain untuk ngemil, tahu aci biasanya juga untuk oleh-oleh."
-      image={Makanan}
+      title="Tari"
+      description="Tari Pesantenan adalah tarian tradisional dari Pati, Jawa Tengah yang menceritakan sejarah berdirinya Kadipaten Pati. Tarian ini menggambarkan peperangan dan pembabatan hutan untuk memperluas wilayah Kadipaten Pati. "
+      image={Tari}
     />
     <Section
       title="Wisata"
-      description="Salah satu wisata yang ada di Kabupaten Tegal yaitu Waduk Cacaban. Waduk tak hanya digunakan untuk menyimpan air, tapi juga sebagai tempat wisata. Keindahan Waduk Cacaban tak dapat dimungkiri lagi, apalagi saat matahari terbit. Semakin menambah daya tarik, ada hutan yang mengelilingi area waduk. Tak hanya itu, tempat ini dilengkapi warung apung, kapal wisata, hingga area pemancingan."
+      description="Bukit Naga Jolong adalah destinasi wisata alam yang terletak di Desa Sitiluhur, Kecamatan Gembong, Kabupaten Pati, Jawa Tengah. Tempat ini menawarkan hamparan kebun buah naga seluas sekitar 10 hektare, di mana pengunjung dapat menikmati wisata petik buah saat musim panen tiba."
       image={Wisata}
+    />
+    <Section
+      title="Tradisi"
+      description="Haul Syekh Jangkung adalah tradisi dan kearifan lokal Kota Pati, Jawa Tengah yang memperingati wafatnya Syekh Jangkung. Tradisi ini biasanya diadakan pada tanggal 14-15 bulan Rajab. "
+      image={Tradisi}
     />
     <Footer />
   </div>

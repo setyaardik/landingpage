@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabtegal/anjungan.png";
-import Makanan from "../images/kabtegal/makanan.png";
-import Tradisi from "../images/kabtegal/tradisi.png";
-import Wisata from "../images/kabtegal/wisata.png";
+import AnjunganImage from "../images/kotasalatiga/anjungan-kotasalatiga.jpg";
+import Tradisi from "../images/kotasalatiga/tradisi.png";
+import Makanan from "../images/kotasalatiga/makanan.png";
+import Kesenian from "../images/kotasalatiga/seni.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -34,7 +34,7 @@ const Header = () => (
       <div className="flex items-center gap-4">
         <img
           src={Logo}
-          alt="Logo PTPP Jawa Tengah"
+          alt="Logo prpp Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
         <h1 className="text-2xl font-semibold drop-shadow-lg">
@@ -51,18 +51,25 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN TEGAL
+      KOTA SALATIGA
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
-          src={Anjungan}
-          alt="Anjungan Kabupaten Sragen"
+          src={AnjunganImage}
+          alt="Anjungan Kabupaten Demak"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Nama Tegal berasal dari kata Tetegal yang berarti tanah subur. Kabupaten Tegal didirikan pada 18 Mei 1601 oleh Ki Gede Sebayu, seorang keturunan Majapahit. Setelah membantu merebut kembali Keraton Pajang, ia bergerak ke Tegal, mengembangkan pertanian, dan memperluas lahan. Atas jasanya, Ki Gede Sebayu diangkat menjadi Juru Demung oleh Panembahan Senopati, menandai berdirinya Kabupaten Tegal.
+        Kota Salatiga memiliki sejarah panjang yang dimulai sejak masa Kerajaan
+        Mataram Kuno, sebagaimana tercatat dalam Prasasti Plumpungan tahun 750
+        Masehi. Nama "Salatiga" diyakini berasal dari istilah "Sala" (pohon
+        sala) dan "Tiga" (tiga orang), terkait dengan legenda lokal tentang tiga
+        orang yang dihukum oleh raja. Pada masa kolonial Belanda, Salatiga
+        berkembang menjadi pusat perdagangan dan administrasi karena lokasinya
+        yang strategis di jalur Semarang-Solo. Kini, Salatiga dikenal sebagai
+        kota pendidikan dan budaya dengan suasana sejuk dan harmonis.
       </p>
     </div>
   </div>
@@ -123,16 +130,16 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@ptpp-jateng.com</li>
+            <li>Email: info@prpp-jateng.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.ptpp-jateng.com"
+                href="https://www.prpp-jateng.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.ptpp-jateng.com
+                www.prpp-jateng.com
               </a>
             </li>
           </ul>
@@ -152,18 +159,18 @@ const Home = () => (
     <CitySection />
     <Section
       title="Tradisi"
-      description="Salah satu tradisi yang ada di Kabupaten Tegal yaitu Wayang Golek Cepak Tegalan, seni tradisional Tegal, dibuat dari kayu kedondong jaran yang tahan lama dan dihias cat semprot. Seni ini dipopulerkan oleh dalang Ki Enthus Susmono, yang menciptakan tokoh Lupit dan Slenteng sebagai maskot daerah Tegal."
+      description="Tradisi Saparan di Salatiga dirayakan setiap bulan Sapar dengan kirab budaya, bersih desa, dan pertunjukan tayuban. Ritual ini merupakan wujud syukur sekaligus ajang mempererat hubungan antarwarga."
       image={Tradisi}
     />
     <Section
-      title="Makanan Khas"
-      description="Tahu aci adalah kuliner khas Tegal berbahan dasar tahu, aci, dan bumbu. Tahu digoreng kering hingga tekstur luarnya crispy, sedangkan bagian dalamnya lembut dan kenyal. Selain untuk ngemil, tahu aci biasanya juga untuk oleh-oleh."
+      title="Makanan"
+      description="Gecok kambing, makanan khas Salatiga, dibuat dari daging kambing dengan campuran rempah-rempah yang gurih pedas. Hidangan ini dikenal menghangatkan tubuh berkat kekayaan rempahnya."
       image={Makanan}
     />
     <Section
-      title="Wisata"
-      description="Salah satu wisata yang ada di Kabupaten Tegal yaitu Waduk Cacaban. Waduk tak hanya digunakan untuk menyimpan air, tapi juga sebagai tempat wisata. Keindahan Waduk Cacaban tak dapat dimungkiri lagi, apalagi saat matahari terbit. Semakin menambah daya tarik, ada hutan yang mengelilingi area waduk. Tak hanya itu, tempat ini dilengkapi warung apung, kapal wisata, hingga area pemancingan."
-      image={Wisata}
+      title="Kesenian"
+      description="Drumblek adalah kesenian khas Salatiga yang menyerupai drumben, tetapi menggunakan barang bekas seperti kaleng dan ember sebagai alat musik. Dikenal sejak 1986, Drumblek menampilkan musik ritmis yang unik dan atraktif."
+      image={Kesenian}
     />
     <Footer />
   </div>

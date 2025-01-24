@@ -10,10 +10,10 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import Anjungan from "../images/kabtegal/anjungan.png";
-import Makanan from "../images/kabtegal/makanan.png";
-import Tradisi from "../images/kabtegal/tradisi.png";
-import Wisata from "../images/kabtegal/wisata.png";
+import AnjunganImage from "../images/kotasurakarta/anjungan-kotasurakarta.jpg";
+import Pakaian from "../images/kotasurakarta/beskap.png";
+import Tradisi from "../images/kotasurakarta/tradisi.png";
+import Kerajinan from "../images/kotasurakarta/blangkon.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -34,7 +34,7 @@ const Header = () => (
       <div className="flex items-center gap-4">
         <img
           src={Logo}
-          alt="Logo PTPP Jawa Tengah"
+          alt="Logo prpp Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
         <h1 className="text-2xl font-semibold drop-shadow-lg">
@@ -51,18 +51,25 @@ const CitySection = () => (
     data-aos="fade-up"
   >
     <h1 className="text-4xl font-bold text-red-700 mb-6 drop-shadow-lg">
-      KABUPATEN TEGAL
+      KOTA SURAKARTA
     </h1>
     <div className="mx-auto max-w-3xl px-6">
       <div className="relative group">
         <img
-          src={Anjungan}
-          alt="Anjungan Kabupaten Sragen"
+          src={AnjunganImage}
+          alt="Anjungan Kota Semarang"
           className="rounded-2xl shadow-2xl mb-6 w-full aspect-video object-cover transition-transform transform group-hover:scale-105 duration-300"
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Nama Tegal berasal dari kata Tetegal yang berarti tanah subur. Kabupaten Tegal didirikan pada 18 Mei 1601 oleh Ki Gede Sebayu, seorang keturunan Majapahit. Setelah membantu merebut kembali Keraton Pajang, ia bergerak ke Tegal, mengembangkan pertanian, dan memperluas lahan. Atas jasanya, Ki Gede Sebayu diangkat menjadi Juru Demung oleh Panembahan Senopati, menandai berdirinya Kabupaten Tegal.
+        Kota Surakarta, yang juga dikenal sebagai Solo, didirikan pada tahun
+        1745 oleh Raja Pakubuwono II sebagai pusat pemerintahan Kesunanan
+        Surakarta. Kota ini dibangun setelah perpindahan ibu kota dari Kartasura
+        akibat pemberontakan. Surakarta berkembang menjadi pusat kebudayaan Jawa
+        yang kaya, dengan tradisi seni seperti batik, gamelan, tari, dan wayang.
+        Selain itu, Surakarta juga memiliki peran penting dalam sejarah
+        perjuangan nasional Indonesia, termasuk sebagai tempat berdirinya
+        organisasi Boedi Oetomo.
       </p>
     </div>
   </div>
@@ -123,16 +130,16 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@ptpp-jateng.com</li>
+            <li>Email: info@prpp-jateng.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.ptpp-jateng.com"
+                href="https://www.prpp-jateng.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.ptpp-jateng.com
+                www.prpp-jateng.com
               </a>
             </li>
           </ul>
@@ -151,19 +158,19 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
+      title="Pakaian"
+      description="Beskap Surakarta adalah pakaian adat pria khas Jawa yang digunakan dalam acara resmi atau upacara adat. Beskap memiliki potongan kaku tanpa kerah, dengan bagian depan biasanya dilengkapi kancing miring. Pakaian ini dipadukan dengan kain batik, blangkon (penutup kepala khas Jawa), dan aksesori seperti keris yang diselipkan di belakang pinggang. Beskap mencerminkan keanggunan dan tata krama dalam budaya Jawa, khususnya tradisi Kesunanan Surakarta."
+      image={Pakaian}
+    />
+    <Section
       title="Tradisi"
-      description="Salah satu tradisi yang ada di Kabupaten Tegal yaitu Wayang Golek Cepak Tegalan, seni tradisional Tegal, dibuat dari kayu kedondong jaran yang tahan lama dan dihias cat semprot. Seni ini dipopulerkan oleh dalang Ki Enthus Susmono, yang menciptakan tokoh Lupit dan Slenteng sebagai maskot daerah Tegal."
+      description="Grebeg Sudiro adalah tradisi budaya yang digelar setiap tahun di Kota Surakarta menjelang perayaan Tahun Baru Imlek. Tradisi ini mencerminkan akulturasi budaya Jawa dan Tionghoa, yang ditandai dengan kirab budaya, barongsai, dan puncaknya pembagian kue keranjang (kue khas Imlek) dalam bentuk gunungan. Acara ini berlangsung di kawasan Pasar Gede, pusat aktivitas komunitas Tionghoa di Solo."
       image={Tradisi}
     />
     <Section
-      title="Makanan Khas"
-      description="Tahu aci adalah kuliner khas Tegal berbahan dasar tahu, aci, dan bumbu. Tahu digoreng kering hingga tekstur luarnya crispy, sedangkan bagian dalamnya lembut dan kenyal. Selain untuk ngemil, tahu aci biasanya juga untuk oleh-oleh."
-      image={Makanan}
-    />
-    <Section
-      title="Wisata"
-      description="Salah satu wisata yang ada di Kabupaten Tegal yaitu Waduk Cacaban. Waduk tak hanya digunakan untuk menyimpan air, tapi juga sebagai tempat wisata. Keindahan Waduk Cacaban tak dapat dimungkiri lagi, apalagi saat matahari terbit. Semakin menambah daya tarik, ada hutan yang mengelilingi area waduk. Tak hanya itu, tempat ini dilengkapi warung apung, kapal wisata, hingga area pemancingan."
-      image={Wisata}
+      title="Kerajinan"
+      description="Blangkon Serengan adalah salah satu jenis blangkon khas Surakarta (Solo) yang memiliki ciri khas berupa pola batik sederhana dengan warna dominan cokelat tua. Nama Serengan berasal dari wilayah di Solo yang menjadi pusat produksi blangkon ini. Blangkon ini biasanya dipakai oleh masyarakat umum untuk acara adat maupun keseharian, dan desainnya melambangkan kesederhanaan serta kedekatan dengan budaya lokal."
+      image={Kerajinan}
     />
     <Footer />
   </div>
