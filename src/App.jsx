@@ -21,10 +21,25 @@ import KotaTegal from "./pages/kotategal";
 import KabRembang from "./pages/kabrembang";
 import KabJepara from "./pages/kabjepara";
 import KabWonogiri from "./pages/kabwonogiri";
+import KotaSurakarta from "./pages/kotasurakarta"; 
+import KabDemak from "./pages/kabdemak";
+import KabCilacap from "./pages/kabcilacap";
+import KabKlaten from "./pages/kabklaten";
+import KotaSalatiga from "./pages/kotasalatiga";
+import KabKaranganyar from "./pages/kabkaranganyar";
+import KabKebumen from "./pages/kabkebumen";
+import KabKudus from "./pages/kabkudus";
+import KabMagelang from "./pages/kabmagelang";
+import KabSukaharjo from "./pages/kabsukoharjo";
+import KabGrobogan from "./pages/kabgrobogan";
+import KabSemarang from "./pages/kabsemarang";
+import KabWonogiri from "./pages/kabwonogiri";
+import KotaMagelang from "./pages/kotamagelang";
 
 const App = () => (
   <Router>
     <Routes>
+      <Route path="/kabsemarang" element={<KabSemarang />} />
       <Route path="/kotasemarang" element={<KotaSemarang />} />
       <Route path="/kabpemalang" element={<KabPemalang />} />
       <Route path="/kabpurbalingga" element={<KabPurbalingga />} />
@@ -46,6 +61,19 @@ const App = () => (
       <Route path="/kabrembang" element={<KabRembang />} />
       <Route path="/kabjepara" element={<KabJepara />} />
       <Route path="/kabwonogiri" element={<KabWonogiri />} />
+      <Route path="/kotasurakarta" element={<KotaSurakarta />} />
+      <Route path="/kabdemak" element={<KabDemak />} />
+      <Route path="/kabcilacap" element={<KabCilacap />} />
+      <Route path="/kabklaten" element={<KabKlaten />} />
+      <Route path="/kotasalatiga" element={<KotaSalatiga />} />
+      <Route path="/kabkaranganyar" element={<KabKaranganyar />} />
+      <Route path="/kabkebumen" element={<KabKebumen />} />
+      <Route path="/kabkudus" element={<KabKudus />} />
+      <Route path="/kabmagelang" element={<KabMagelang />} />
+      <Route path="/kabwonogiri" element={<KabWonogiri />} />
+      <Route path="/kotamagelang" element={<KotaMagelang />} />
+      <Route path="/kabsukoharjo" element={<KabSukaharjo />} />
+      <Route path="/kabgrobogan" element={<KabGrobogan />} />
     </Routes>
   </Router>
 );
