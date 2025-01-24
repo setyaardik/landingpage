@@ -15,12 +15,15 @@ import KabPekalongan from "./pages/kabpekalongan";
 import KabBatang from "./pages/kabbatang";
 import KabBlora from "./pages/kabblora";
 import KabBoyolali from "./pages/kabboyolali";
+import KabGrobogan from "./pages/kabgrobogan";
+import KabSukoharjo from "./pages/kabsukoharjo";
 
 const App = () => (
   <Router>
     <Routes>
       <Route path="/kotasemarang" element={<KotaSemarang />} />
       <Route path="/kabpemalang" element={<KabPemalang />} />
+      <Route path="/kabsukoharjo" element={<KabSukoharjo />} />
 
       <Route path="/kabpurbalingga" element={<KabPurbalingga />} />
       <Route path="/kabsragen" element={<KabSragen />} />
@@ -36,6 +39,7 @@ const App = () => (
       <Route path="/kabbatang" element={<KabBatang />} />
       <Route path="/kabblora" element={<KabBlora />} />
       <Route path="/kabboyolali" element={<KabBoyolali />} />
+      <Route path="/kabgrobogan" element={<KabGrobogan />} />
     </Routes>
   </Router>
 );
