@@ -33,7 +33,6 @@ import KabMagelang from "./pages/kabmagelang";
 import KabSukaharjo from "./pages/kabsukoharjo";
 import KabGrobogan from "./pages/kabgrobogan";
 import KabSemarang from "./pages/kabsemarang";
-import KabWonogiri from "./pages/kabwonogiri";
 import KotaMagelang from "./pages/kotamagelang";
 
 const App = () => (
@@ -70,7 +69,6 @@ const App = () => (
       <Route path="/kabkebumen" element={<KabKebumen />} />
       <Route path="/kabkudus" element={<KabKudus />} />
       <Route path="/kabmagelang" element={<KabMagelang />} />
-      <Route path="/kabwonogiri" element={<KabWonogiri />} />
       <Route path="/kotamagelang" element={<KotaMagelang />} />
       <Route path="/kabsukoharjo" element={<KabSukaharjo />} />
       <Route path="/kabgrobogan" element={<KabGrobogan />} />

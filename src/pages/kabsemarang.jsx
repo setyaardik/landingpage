@@ -122,16 +122,17 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@ptpp-jateng.com</li>
+            <li>Whatsapp: +6281329000157</li>
+            <li>Email: info@prppjawatengah.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.ptpp-jateng.com"
+                href="prppjawatengah.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.ptpp-jateng.com
+                prppjawatengah.com
               </a>
             </li>
           </ul>
@@ -150,7 +151,7 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
-      title="Budaya"
+      title="Kebudayaan"
       description="Gambang Semarang adalah seni musik tradisional dari Semarang yang memadukan musik, vokal, tari, dan lawak. Ciri khasnya adalah alunan musik yang mengiringi gerak kaki dinamis sesuai irama lagu, menggunakan alat seperti bonang, gambang, gong suwuk, kendang, dan ketipung. Merupakan hasil akulturasi budaya Tionghoa dan Jawa, dengan tokoh perintis seperti Lie Ho Sun dan Oey Yok Siang. Dalam perkembangannya, unsur kejawaan semakin dominan dengan lagu-lagu pop Jawa."
       image={Budaya}
     />
@@ -160,7 +161,7 @@ const Home = () => (
       image={Wisata}
     />
     <Section
-      title="Tari"
+      title="Kesenian"
       description="Tari Prajuritan adalah tarian massal tradisional yang berasal dari Desa Getasan, Kabupaten Semarang, Jawa Tengah, dan berkembang ke daerah lain seperti Ambarawa, Banyubiru, Sumowono, Ungaran, dan Salatiga. Tarian ini melibatkan unsur busana, tata rias, gerakan, dan alat musik, dengan jumlah penari disesuaikan tempat pementasan. Meski termasuk tarian kelompok, gerakan dan iringannya yang monoton membuatnya kurang diminati, jarang ditampilkan, dan kurang dikenal masyarakat."
       image={Tari}
     />

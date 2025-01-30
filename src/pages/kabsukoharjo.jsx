@@ -125,16 +125,17 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@prpp-jateng.com</li>
+            <li>Whatsapp: +6281329000157</li>
+            <li>Email: info@prppjawatengah.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.prpp-jateng.com"
+                href="prppjawatengah.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.prpp-jateng.com
+                prppjawatengah.com
               </a>
             </li>
           </ul>
@@ -153,12 +154,12 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
-      title="Makanan"
+      title="Makanan Khas"
       description='Alakathak dibuat dengan bahan dasar tempe dan mi yang dibuat dari tepung kanji. Kedua bahan tersebut diolah sedemikian rupa dengan tambahan aneka bumbu khas. Setelah itu, bahan tersebut dibungkus dengan daun jati yang masih hijau sehingga terasa kesan tradisional yang sangat kental.'
       image={Makanan}
     />
     <Section
-      title="Tari"
+      title="Kesenian"
       description='Tari kebo kinul merupakan salah satu jenis tarian dari Kabupaten Sukoharjo. Nama Kebo Kinul memiliki arti “kerbau yang gemuk”. Pada awalnya tarian kebo kinul ini termasuk ritual bersih desa sebelum akhirnya menjadi jenis hiburan berupa tarian tradisonal masyarakat Sukoharjo.'
       image={Tari}
     />
