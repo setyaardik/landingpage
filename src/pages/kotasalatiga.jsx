@@ -130,16 +130,17 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@prpp-jateng.com</li>
+            <li>Whatsapp: +6281329000157</li>
+            <li>Email: info@prppjawatengah.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.prpp-jateng.com"
+                href="prppjawatengah.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.prpp-jateng.com
+                prppjawatengah.com
               </a>
             </li>
           </ul>
@@ -163,7 +164,7 @@ const Home = () => (
       image={Tradisi}
     />
     <Section
-      title="Makanan"
+      title="Makanan Khas"
       description="Gecok kambing, makanan khas Salatiga, dibuat dari daging kambing dengan campuran rempah-rempah yang gurih pedas. Hidangan ini dikenal menghangatkan tubuh berkat kekayaan rempahnya."
       image={Makanan}
     />

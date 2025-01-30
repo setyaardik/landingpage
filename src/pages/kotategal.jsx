@@ -62,7 +62,14 @@ const CitySection = () => (
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Kota Tegal didirikan oleh Ki Gede Sebayu, seorang bangsawan yang datang ke tepian Sungai Gung dan mengembangkan pertanian dengan memperluas lahan serta membangun saluran irigasi. Selain itu, dia juga mengajarkan agama Islam kepada masyarakat. Atas jasanya, Ki Gede Sebayu diangkat sebagai pemimpin Tegal pada 12 April 1580, yang kemudian ditetapkan sebagai hari jadi Kota Tegal berdasarkan Peraturan Daerah No.5 tahun 1988.</p>
+        Kota Tegal didirikan oleh Ki Gede Sebayu, seorang bangsawan yang datang
+        ke tepian Sungai Gung dan mengembangkan pertanian dengan memperluas
+        lahan serta membangun saluran irigasi. Selain itu, dia juga mengajarkan
+        agama Islam kepada masyarakat. Atas jasanya, Ki Gede Sebayu diangkat
+        sebagai pemimpin Tegal pada 12 April 1580, yang kemudian ditetapkan
+        sebagai hari jadi Kota Tegal berdasarkan Peraturan Daerah No.5 tahun
+        1988.
+      </p>
     </div>
   </div>
 );
@@ -122,16 +129,17 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@ptpp-jateng.com</li>
+            <li>Whatsapp: +6281329000157</li>
+            <li>Email: info@prppjawatengah.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.ptpp-jateng.com"
+                href="prppjawatengah.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.ptpp-jateng.com
+                prppjawatengah.com
               </a>
             </li>
           </ul>

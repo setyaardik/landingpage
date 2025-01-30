@@ -123,16 +123,18 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@ptpp-jateng.com</li>
+            <li>Whatsapp: +6281329000157</li>
+            <li>Email: info@prppjawatengah.com</li>
+
             <li>
               Website:{" "}
               <a
-                href="https://www.ptpp-jateng.com"
+                href="prppjawatengah.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.ptpp-jateng.com
+                prppjawatengah.com
               </a>
             </li>
           </ul>
@@ -156,7 +158,7 @@ const Home = () => (
       image={Tradisi}
     />
     <Section
-      title="Alat Musik"
+      title="Kesenian"
       description="Bundengan merupakan alat musik tradisional khas Wonosobo. Bandengan berasal dari kowangan, yaitu alat musik berteduh penggembala bebek saat hujan. Kowangan dipasangi senar sehingga menghasilkan suara yang nyaring."
       image={AlatMusik}
     />
