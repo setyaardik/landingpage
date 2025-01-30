@@ -129,16 +129,17 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@prpp-jateng.com</li>
+            <li>Whatsapp: +6281329000157</li>
+            <li>Email: info@prppjawatengah.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.prpp-jateng.com"
+                href="https://prppjawatengah.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.prpp-jateng.com
+                prppjawatengah.com
               </a>
             </li>
           </ul>
@@ -157,7 +158,7 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
-      title="Pakaian Adat"
+      title="Kebudayaan"
       description="Pakaian pengantin khas Boyolali yang memiliki sejarah panjang sejak zaman Pangeran Diponegoro. Busana ini mencerminkan keindahan dan keagungan budaya Boyolali melalui desainnya yang penuh makna filosofis. Pada tahun 2021, pakaian ini resmi ditetapkan sebagai Warisan Budaya Tak Benda (WBTB) oleh Kementerian Pendidikan dan Kebudayaan RI, menjadikannya simbol kebanggaan masyarakat Boyolali sekaligus warisan budaya yang dilestarikan."
       image={Pakaian}
     />

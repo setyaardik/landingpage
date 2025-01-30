@@ -134,7 +134,7 @@ const Footer = () => (
             <li>
               Website:{" "}
               <a
-                href="prppjawatengah.com"
+                href="https://prppjawatengah.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
