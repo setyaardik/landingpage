@@ -13,7 +13,7 @@ import BatikBackground from "../images/batik-background.png";
 import AnjunganImage from "../images/kotasemarang/anjungan-semarang.png";
 import TahuGimbal from "../images/kotasemarang/tahu-gimbal.png";
 import Dugderan from "../images/kotasemarang/dugderan.png";
-import Wisata from "../images/kotasemarang/wisata.png";
+import Wisata from "../images/kotasemarang/wisata1.jpg";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -62,14 +62,13 @@ const CitySection = () => (
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-
-      Kota Semarang bermula sebagai pelabuhan Pragota pada abad ke-8 M. Nama
-"Semarang" berasal dari pohon Asem Arang, dan resmi menjadi kabupaten pada 2 Mei
-1547 di era Sultan Hadiwijaya. Semarang diserahkan ke VOC pada 1678, menjadi bagian
-Hindia Belanda hingga 1942.
-Setelah kemerdekaan, terjadi Pertempuran Lima Hari melawan Jepang pada 1945. Pada 1946,
-Belanda sempat menduduki kota, tetapi akhirnya dikembalikan ke Indonesia pada 1 April 1950,
-menandai awal pembangunan kembali.
+        Kota Semarang bermula sebagai pelabuhan Pragota pada abad ke-8 M. Nama
+        "Semarang" berasal dari pohon Asem Arang, dan resmi menjadi kabupaten
+        pada 2 Mei 1547 di era Sultan Hadiwijaya. Semarang diserahkan ke VOC
+        pada 1678, menjadi bagian Hindia Belanda hingga 1942. Setelah
+        kemerdekaan, terjadi Pertempuran Lima Hari melawan Jepang pada 1945.
+        Pada 1946, Belanda sempat menduduki kota, tetapi akhirnya dikembalikan
+        ke Indonesia pada 1 April 1950, menandai awal pembangunan kembali.
       </p>
     </div>
   </div>
@@ -172,7 +171,7 @@ masyarakat Semarang."
     />
     <Section
       title="Wisata"
-      description="Jelajahi wisata ikonik seperti Lawang Sewu, Kota Lama, dan Pantai Marina."
+      description="Maerokoco adalah miniatur atau taman mini Jawa Tengah yang merangkum semua rumah adat dari 35 kabupaten dan kota. Terletak sekitar 5 km dari pusat kota atau di daerah PRPP, paviliun biasanya digunakan untuk menjual produk industri dan kerajinan yang diproduksi oleh masing-masing daerah. Di samping rumah adat, obyek wisata ini dilengkapi juga dengan fasilitas permainan."
       image={Wisata}
     />
     <Footer />
@@ -180,4 +179,3 @@ masyarakat Semarang."
 );
 
 export default Home;
-
