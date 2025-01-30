@@ -130,16 +130,17 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@ptpp-jateng.com</li>
+            <li>Whatsapp: +6281329000157</li>
+            <li>Email: info@prppjawatengah.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.ptpp-jateng.com"
+                href="https://prppjawatengah.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.ptpp-jateng.com
+                prppjawatengah.com
               </a>
             </li>
           </ul>
@@ -171,7 +172,7 @@ masyarakat Semarang."
     />
     <Section
       title="Wisata"
-      description="Jelajahi wisata ikonik seperti Lawang Sewu, Kota Lama, dan Pantai Marina."
+      description="Grand Maerokoco adalah miniatur atau taman mini Jawa Tengah yang merangkum semua rumah adat (paviliun) dari 35 kabupaten dan kota. Paviliun biasanya digunakan untuk menjual produk industri dan kerajinan yang diproduksi oleh masing-masing daerah. Di samping rumah adat, obyek wisata ini dilengkapi juga dengan fasilitas permainan. seperti sepeda air, perahu, dan juga melatih bagi pengunjung. Grand Maerokoco dapat diakses dengan angkutan umum atau kendaraan pribadi."
       image={Wisata}
     />
     <Footer />

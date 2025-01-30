@@ -128,16 +128,17 @@ const Footer = () => (
           <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
-            <li>Email: info@ptpp-jateng.com</li>
+            <li>Whatsapp: +6281329000157</li>
+            <li>Email: info@prppjawatengah.com</li>
             <li>
               Website:{" "}
               <a
-                href="https://www.ptpp-jateng.com"
+                href="https://prppjawatengah.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                www.ptpp-jateng.com
+                prppjawatengah.com
               </a>
             </li>
           </ul>
