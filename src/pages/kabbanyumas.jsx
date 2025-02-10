@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../index.css";
@@ -17,6 +22,18 @@ import Wisata from "../images/kabbanyumas/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
+const BackButton = () => {
+  const navigate = useNavigate();
+  return (
+    <button
+      onClick={() => navigate("/home")}
+      className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
+    >
+      ←
+    </button>
+  );
+};
+
 const Header = () => (
   <header className="relative text-white py-4 shadow-md rounded-b-xl">
     <div
@@ -29,7 +46,11 @@ const Header = () => (
         zIndex: 0,
       }}
     ></div>
-    <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
+    <div
+      className="absolute inset-0 z-0"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+    ></div>
+
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
       <div className="flex items-center gap-4">
         <img
@@ -37,7 +58,7 @@ const Header = () => (
           alt="Logo prpp Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
-        <h1 className="text-2xl font-semibold drop-shadow-lg">
+        <h1 className="text-2xl font-semibold text-white drop-shadow-black drop-shadow-lg">
           Grand Maerakaca
         </h1>
       </div>
@@ -174,6 +195,7 @@ const Home = () => (
       image={Wisata}
     />
     <Footer />
+    <BackButton />
   </div>
 );
 

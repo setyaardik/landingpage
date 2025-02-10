@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../index.css";
@@ -13,7 +18,7 @@ import BatikBackground from "../images/batik-background.png";
 import AnjunganImage from "../images/kabpekalongan/anjungan-kabpekalongan.jpg";
 import Segomegono from "../images/kabpekalongan/segomegono.png";
 import Kupatan from "../images/kabpekalongan/kupatan.png";
-import Wisata from "../images/kabpekalongan/wisata.png";
+import Budaya from "../images/kabpekalongan/budaya.png";
 
 AOS.init({ duration: 1000, once: false });
 
@@ -29,7 +34,11 @@ const Header = () => (
         zIndex: 0,
       }}
     ></div>
-    <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
+    <div
+      className="absolute inset-0 z-0"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+    ></div>
+
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
       <div className="flex items-center gap-4">
         <img
@@ -37,13 +46,25 @@ const Header = () => (
           alt="Logo prpp Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
-        <h1 className="text-2xl font-semibold drop-shadow-lg">
+        <h1 className="text-2xl font-semibold text-white drop-shadow-black drop-shadow-lg">
           Grand Maerakaca
         </h1>
       </div>
     </div>
   </header>
 );
+
+const BackButton = () => {
+  const navigate = useNavigate();
+  return (
+    <button
+      onClick={() => navigate("/home")}
+      className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
+    >
+      ←
+    </button>
+  );
+};
 
 const CitySection = () => (
   <div
@@ -168,11 +189,12 @@ const Home = () => (
       image={Kupatan}
     />
     <Section
-      title="Wisata"
-      description="Ekowisata Mangrove Mulyo Asri di Pekalongan, yang dulunya tambak udang dan sawah, kini menjadi hutan mangrove edukatif. Pengunjung dapat menikmati keindahan mangrove yang lebat, terutama saat senja, sambil belajar tentang manfaat dan pelestariannya."
-      image={Wisata}
+      title="Kebudayaan"
+      description="Tarian ini awalnya merupakan tarian untuk menyambut tamu agung, namun kini sering dipentaskan dalam berbagai acara kebudayaan dan pernikahan."
+      image={Budaya}
     />
     <Footer />
+    <BackButton />
   </div>
 );
 

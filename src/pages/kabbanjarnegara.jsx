@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router,Route,Routes, useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../index.css";
@@ -17,6 +17,18 @@ import Wisata from "../images/kabbanjarnegara/wisata.png";
 
 AOS.init({ duration: 1000, once: false });
 
+const BackButton = () => {
+  const navigate = useNavigate();
+  return (
+    <button
+      onClick={() => navigate("/home")}
+      className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
+    >
+      ←
+    </button>
+  );
+};
+
 const Header = () => (
   <header className="relative text-white py-4 shadow-md rounded-b-xl">
     <div
@@ -29,7 +41,11 @@ const Header = () => (
         zIndex: 0,
       }}
     ></div>
-    <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
+    <div
+      className="absolute inset-0 z-0"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+    ></div>
+
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
       <div className="flex items-center gap-4">
         <img
@@ -158,20 +174,21 @@ const Home = () => (
     <CitySection />
     <Section
       title="Makanan Khas"
-      description="Soto krandegan adalah salah satu kuliner khas Kota Banjarnegara kombinasi antara kuah kuning dengan santan yang dicampur dan direbus dengan tulang-tulang dan daging sapi menambah cita rasa gurih soto krandegan. Aroma santan dan rempahnya juga khas. Berbeda dengan soto-soto yang biasa dinikmati dengan nasi, soto krandegan umumnya disajikan dengan ketupat."
+      description="Soto krandegan adalah salah satu kuliner khas Kota Banjarnegara kombinasi antara kuah kuning dengan santan yang dicampur dan direbus dengan tulang-tulang dan daging sapi menambah cita rasa gurih soto krandegan."
       image={Krandegan}
     />
     <Section
       title="Tradisi"
-      description="Tradisi Suran adalah upacara adat tahunan yang diadakan sebagai bentuk rasa syukur kepada Tuhan Yang Maha Esa atas hasil panen yang melimpah. Dalam acara ini, masyarakat Suran berkumpul untuk melakukan berbagai ritual seperti mengarak gunungan hasil panen, tarian-tarian tradisional, dan acara kesenian lainnya."
+      description="Tradisi Suran adalah upacara adat tahunan yang diadakan sebagai bentuk rasa syukur kepada Tuhan Yang Maha Esa atas hasil panen yang melimpah."
       image={Suran}
     />
     <Section
       title="Wisata"
-      description="Kawah Sileri Dieng, terletak di Desa Kepakisan, Kecamatan Batur, Kabupaten Banjarnegara, Jawa Tengah, adalah kawah aktif yang memukau. Di sini, pengunjung dapat menyaksikan gemuruh perut bumi yang mengeluarkan uap panas, sambil menikmati pemandangan alami Pegunungan Pagerkandang dan Gunung Sipandu. Kawasan ini dikelilingi bukit-bukit hijau yang menjulang serta lahan pertanian warga yang menambah suasana asri dan menenangkan."
+      description="Kawah Sileri Dieng, terletak di Desa Kepakisan, Kabupaten Banjarnegara, Jawa Tengah, adalah kawah aktif yang memukau."
       image={Wisata}
     />
     <Footer />
+    <BackButton />
   </div>
 );
 

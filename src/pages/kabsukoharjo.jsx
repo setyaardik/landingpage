@@ -62,9 +62,12 @@ const CitySection = () => (
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Kabupaten Grobogan, berdiri resmi pada 4 Maret 1726 saat Susuhunan Amangkurat IV
-       mengangkat bupati pertama, Ngabehi Wongsodipo. Nama "Grobogan" berasal dari legenda bunyi jatuhnya pusaka Sunan Ngundung,
-        dan wilayah ini memiliki sejarah panjang sejak era Mataram Kuno.
+        Kabupaten Sukoharjo, bagian dari Jawa Tengah, memiliki sejarah yang
+        berakar dari Kesultanan Mataram dan Kasunanan Surakarta. Resmi menjadi
+        kabupaten pada 15 Juli 1946, Sukoharjo berkembang sebagai daerah agraris
+        dan industri, dengan sektor pertanian, tekstil, dan perdagangan sebagai
+        pilar ekonominya. Dikenal dengan julukan "Sukoharjo Makmur,"
+        kabupaten ini terus mengalami pertumbuhan di berbagai sektor.
       </p>
     </div>
   </div>

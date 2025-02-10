@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../index.css";
@@ -29,21 +34,37 @@ const Header = () => (
         zIndex: 0,
       }}
     ></div>
-    <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
+    <div
+      className="absolute inset-0 z-0"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+    ></div>
+
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
       <div className="flex items-center gap-4">
         <img
           src={Logo}
-          alt="Logo PTPP Jawa Tengah"
+          alt="Logo prpp Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
-        <h1 className="text-2xl font-semibold drop-shadow-lg">
+        <h1 className="text-2xl font-semibold text-white drop-shadow-black drop-shadow-lg">
           Grand Maerakaca
         </h1>
       </div>
     </div>
   </header>
 );
+
+const BackButton = () => {
+  const navigate = useNavigate();
+  return (
+    <button
+      onClick={() => navigate("/home")}
+      className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
+    >
+      ←
+    </button>
+  );
+};
 
 const CitySection = () => (
   <div
@@ -62,7 +83,11 @@ const CitySection = () => (
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Jepara, awalnya dikenal sebagai Ujung Para, berkembang sebagai pelabuhan penting sejak abad ke-15. Pada 1549, Ratu Kalinyamat memimpin, menjadikannya pusat perdagangan dan pangkalan angkatan laut. Beliau terkenal karena perlawanan gigih melawan Portugis dan kontribusinya pada seni ukir khas Jepara. Hari Jadi Jepara diperingati pada 10 April 1549.
+        Jepara, awalnya dikenal sebagai Ujung Para, berkembang sebagai pelabuhan
+        penting sejak abad ke-15. Pada 1549, Ratu Kalinyamat memimpin,
+        menjadikannya pusat perdagangan dan pangkalan angkatan laut. Beliau
+        terkenal karena perlawanan gigih melawan Portugis dan kontribusinya pada
+        seni ukir khas Jepara. Hari Jadi Jepara diperingati pada 10 April 1549.
       </p>
     </div>
   </div>
@@ -169,6 +194,7 @@ Tradisi Lomban Kupatan dilaksanakan setiap bulan Syawal, yaitu sepekan setelah I
       image={Kerajinan}
     />
     <Footer />
+    <BackButton />
   </div>
 );
 

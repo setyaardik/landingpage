@@ -21,7 +21,7 @@ import KotaTegal from "./pages/kotategal";
 import KabRembang from "./pages/kabrembang";
 import KabJepara from "./pages/kabjepara";
 import KabWonogiri from "./pages/kabwonogiri";
-import KotaSurakarta from "./pages/kotasurakarta"; 
+import KotaSurakarta from "./pages/kotasurakarta";
 import KabDemak from "./pages/kabdemak";
 import KabCilacap from "./pages/kabcilacap";
 import KabKlaten from "./pages/kabklaten";
@@ -34,6 +34,7 @@ import KabSukaharjo from "./pages/kabsukoharjo";
 import KabGrobogan from "./pages/kabgrobogan";
 import KabSemarang from "./pages/kabsemarang";
 import KotaMagelang from "./pages/kotamagelang";
+import Home from "./pages/home";
 
 const App = () => (
   <Router>
@@ -72,6 +73,7 @@ const App = () => (
       <Route path="/kotamagelang" element={<KotaMagelang />} />
       <Route path="/kabsukoharjo" element={<KabSukaharjo />} />
       <Route path="/kabgrobogan" element={<KabGrobogan />} />
+      <Route path="/home" element={<Home />} />
     </Routes>
   </Router>
 );

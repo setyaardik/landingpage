@@ -25,7 +25,7 @@ const Header = () => (
         backgroundImage: `url(${BatikBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        filter: "blur(1px)",
+        filter: "blur(1.5px)",
         zIndex: 0,
       }}
     ></div>
@@ -37,9 +37,11 @@ const Header = () => (
           alt="Logo PTPP Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
+        <div className="bg-black bg-opacity-45 py-0.1 px-1 rounded-lg">
         <h1 className="text-2xl font-semibold drop-shadow-lg">
           Grand Maerakaca
         </h1>
+        </div>
       </div>
     </div>
   </header>

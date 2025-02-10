@@ -170,8 +170,7 @@ Lokasi Jalan Pantai, Wonokerto, Panjang Wetan, Kecamatan Pekalongan Utara, Kota 
     />
     <Section
       title="Makanan Khas"
-      description="pantai ini menawarkan berbagai fasilitas seperti kolam renang, menara pandang, skywalk, dan area bermain anak. Jam operasionalnya dari pukul 08.00 hingga 21.00 WIB
-Lokasi Jalan Pantai, Wonokerto, Panjang Wetan, Kecamatan Pekalongan Utara, Kota Pekalongan."
+      description="Sego megono atau nasi begono terbuat dari nangka muda yang dicampur parutan kelapa dan diracik dengan bumbu khas pekalongan."
       image={Makanan}
     />
     <Footer />

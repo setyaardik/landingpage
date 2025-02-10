@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../index.css";
@@ -29,7 +34,11 @@ const Header = () => (
         zIndex: 0,
       }}
     ></div>
-    <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
+    <div
+      className="absolute inset-0 z-0"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+    ></div>
+
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
       <div className="flex items-center gap-4">
         <img
@@ -37,13 +46,25 @@ const Header = () => (
           alt="Logo prpp Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
-        <h1 className="text-2xl font-semibold drop-shadow-lg">
+        <h1 className="text-2xl font-semibold text-white drop-shadow-black drop-shadow-lg">
           Grand Maerakaca
         </h1>
       </div>
     </div>
   </header>
 );
+
+const BackButton = () => {
+  const navigate = useNavigate();
+  return (
+    <button
+      onClick={() => navigate("/home")}
+      className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
+    >
+      ←
+    </button>
+  );
+};
 
 const CitySection = () => (
   <div
@@ -62,9 +83,18 @@ const CitySection = () => (
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-      Pada abad ke-16, Pemalang merupakan salah satu dari 14 daerah merdeka di Pulau Jawa yang dipimpin oleh seorang pangeran atau raja. Namun, kemudian wilayah ini ditaklukkan oleh Kesultanan Mataram dan menjadi daerah vasal yang diperintah oleh pangeran atau raja vasal. 
-Asal-usul nama "Pemalang" diyakini berasal dari kata "pe" yang dalam bahasa Jawa menunjukkan tempat, dan "malang" yang merujuk pada nama tokoh Raden Joko Malang atau Raden Sambungyudha, sehingga "Pemalang" berarti tempat yang dimiliki atau dikuasai oleh Raden Joko Malang. 
-Hari Jadi Kabupaten Pemalang ditetapkan pada tanggal 24 Januari 1575, berdasarkan Peraturan Daerah Kabupaten Dati II Pemalang Nomor 9 Tahun 1996. Penetapan ini didasarkan pada perhitungan surya sengkala "Lunguding Sabdo Wangsiting Gusti" yang memiliki nilai tahun 1575.
+        Pada abad ke-16, Pemalang merupakan salah satu dari 14 daerah merdeka di
+        Pulau Jawa yang dipimpin oleh seorang pangeran atau raja. Namun,
+        kemudian wilayah ini ditaklukkan oleh Kesultanan Mataram dan menjadi
+        daerah vasal yang diperintah oleh pangeran atau raja vasal. Asal-usul
+        nama "Pemalang" diyakini berasal dari kata "pe" yang dalam bahasa Jawa
+        menunjukkan tempat, dan "malang" yang merujuk pada nama tokoh Raden Joko
+        Malang atau Raden Sambungyudha, sehingga "Pemalang" berarti tempat yang
+        dimiliki atau dikuasai oleh Raden Joko Malang. Hari Jadi Kabupaten
+        Pemalang ditetapkan pada tanggal 24 Januari 1575, berdasarkan Peraturan
+        Daerah Kabupaten Dati II Pemalang Nomor 9 Tahun 1996. Penetapan ini
+        didasarkan pada perhitungan surya sengkala "Lunguding Sabdo Wangsiting
+        Gusti" yang memiliki nilai tahun 1575.
       </p>
     </div>
   </div>
@@ -170,6 +200,7 @@ Lokasi Desa Nyalembang, Kecamatan Pulosari, Kabupaten Pemalang"
       image={Wisata}
     />
     <Footer />
+    <BackButton />
   </div>
 );
 
