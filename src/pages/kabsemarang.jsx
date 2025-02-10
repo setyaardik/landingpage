@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../index.css";
@@ -29,6 +34,11 @@ const Header = () => (
         zIndex: 0,
       }}
     ></div>
+    <div
+      className="absolute inset-0 z-0"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+    ></div>
+
     <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
       <div className="flex items-center gap-4">
@@ -44,6 +54,18 @@ const Header = () => (
     </div>
   </header>
 );
+
+const BackButton = () => {
+  const navigate = useNavigate();
+  return (
+    <button
+      onClick={() => navigate("/home")}
+      className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
+    >
+      ←
+    </button>
+  );
+};
 
 const CitySection = () => (
   <div
@@ -166,6 +188,7 @@ const Home = () => (
       image={Tari}
     />
     <Footer />
+    <BackButton />
   </div>
 );
 
