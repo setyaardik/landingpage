@@ -17,7 +17,7 @@ import BatikBackground from "../images/batik-background.png";
 
 import AnjunganImage from "../images/kabpekalongan/anjungan-kabpekalongan.png";
 import Mangrove from "../images/kabpekalongan/mangrove.png";
-import Kupatan from "../images/kabpekalongan/kupatan.png";
+import Tradisi from "../images/kabpekalongan/tradisi.png";
 import Budaya from "../images/kabpekalongan/budaya.png";
 
 AOS.init({ duration: 1000, once: false });
@@ -187,12 +187,12 @@ const Home = () => (
     />
     <Section
       title="Tradisi"
-      description="Kupatan adalah tradisi Pekalongan tujuh hari setelah Idul Fitri untuk merayakan kemenangan dan silaturahmi. Ketupat disajikan dengan opor ayam dan rendang, disertai saling kunjung antar kerabat."
-      image={Kupatan}
+      description="Tradisi Gunungan Megono adalah perayaan khas Pekalongan, Jawa Tengah, yang diadakan seminggu setelah Idulfitri di Desa Linggoasri. Tradisi ini melambangkan rasa syukur atas hasil bumi dengan menghadirkan gunungan megono—makanan khas dari nangka muda dan kelapa—serta gunungan hasil bumi setinggi 2 meter. Acara diawali dengan kirab gunungan, diikuti pertunjukan seni, dan ditutup dengan perebutan gunungan oleh masyarakat yang dipercaya membawa berkah. Tradisi ini juga bertujuan mempererat silaturahmi serta melestarikan budaya lokal."
+      image={Tradisi}
     />
     <Section
       title="Kebudayaan"
-      description="Tarian ini awalnya merupakan tarian untuk menyambut tamu agung, namun kini sering dipentaskan dalam berbagai acara kebudayaan dan pernikahan."
+      description="Tari Gambyong. Tarian ini awalnya merupakan tarian untuk menyambut tamu agung, namun kini sering dipentaskan dalam berbagai acara kebudayaan dan pernikahan."
       image={Budaya}
     />
     <Footer />

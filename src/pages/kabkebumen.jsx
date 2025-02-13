@@ -192,7 +192,7 @@ Lokasi Desa Karangduwur, Kecamatan Ayah, Kabupaten Kebumen
     />
     <Section
       title="Kebudayaan"
-      description="Diciptakan pada tahun 1995 oleh seniman Kebumen. Menceritakan tentang aktifitas burung lawet dalam mencari makan sampai kembali ke sarangnya. Diperagakan minimal 2 orang penari perempuan."
+      description="Tari Lawet diciptakan pada tahun 1995 oleh seniman Kebumen. Menceritakan tentang aktifitas burung lawet dalam mencari makan sampai kembali ke sarangnya. Diperagakan minimal 2 orang penari perempuan."
       image={Budaya}
     />
     <Footer />

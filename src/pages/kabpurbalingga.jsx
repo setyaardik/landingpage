@@ -179,7 +179,7 @@ const Home = () => (
     <CitySection />
     <Section
       title="Makanan Khas"
-      description="Salah satu makanan khas purbalingga yaitu Sate Plater. Selain madura yang dikenal dengan satenya, Purbalingga juga punya versinya sendiri. Jenis satenya bahkan bisa dikatakan berlawanan walau masih menggunakan bahan yang sama, daging sate. Yang jadi pembeda adalah bumbu dan cara pengolahan. Daging di sate ini sudah direndam dan direbus plus bumbu. Kemudian dibakar untuk rasa yang lebih meresap dan enak."
+      description="Salah satu makanan khas purbalingga yaitu Sate blater. Selain madura yang dikenal dengan satenya, Purbalingga juga punya versinya sendiri. Jenis satenya bahkan bisa dikatakan berlawanan walau masih menggunakan bahan yang sama, daging sate. Yang jadi pembeda adalah bumbu dan cara pengolahan. Daging di sate ini sudah direndam dan direbus plus bumbu. Kemudian dibakar untuk rasa yang lebih meresap dan enak."
       image={Makanan}
     />
     <Section
