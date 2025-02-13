@@ -12,7 +12,7 @@ import "../index.css";
 
 import Logo from "../images/logo.png";
 import InstagramIcon from "../images/instagram-icon.png";
-import FacebookIcon from "../images/facebook-icon.png";
+import TiktokIcon from "../images/tiktok-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
 import Anjungan from "../images/kabmagelang/anjungan.png";
@@ -125,7 +125,7 @@ const Footer = () => (
     <div className="container mx-auto text-center px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
-          <h3 className="text-lg font-bold mb-2">Sosial Media</h3>
+          <h3 className="text-lg font-bold mb-2 text-center">Sosial Media</h3>
           <div className="flex justify-center gap-4">
             <a
               href="https://www.instagram.com/grandmaerakaca/"
@@ -136,12 +136,12 @@ const Footer = () => (
               <img src={InstagramIcon} alt="Instagram" className="w-8 h-8" />
             </a>
             <a
-              href="https://web.facebook.com/GrandMaerakaca/?_rdc=1&_rdr#"
+              href="https://www.tiktok.com/@grandmaerakaca"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 transition-transform"
             >
-              <img src={FacebookIcon} alt="Facebook" className="w-8 h-8" />
+              <img src={TiktokIcon} alt="Tiktok" className="w-8 h-8" />
             </a>
           </div>
         </div>
@@ -167,7 +167,7 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-      <p className="text-lg font-light mt-6">
+      <p className="text-lg font-light mt-6 text-center">
         &copy; 2025 PT Rekreasi dan Promosi Pembangunan Jawa Tengah. All Rights
         Reserved.
       </p>

@@ -7,7 +7,7 @@ import { Carousel } from "react-bootstrap";
 
 import Logo from "../images/logo.png";
 import InstagramIcon from "../images/instagram-icon.png";
-import FacebookIcon from "../images/facebook-icon.png";
+import TiktokIcon from "../images/tiktok-icon.png";
 import BatikBackground from "../images/batik-background.png";
 import beranda1 from "../images/beranda1.png";
 import beranda2 from "../images/gambar4.png";
@@ -220,12 +220,12 @@ const Footer = () => (
               <img src={InstagramIcon} alt="Instagram" className="w-8 h-8" />
             </a>
             <a
-              href="https://web.facebook.com/GrandMaerakaca/?_rdc=1&_rdr#"
+              href="https://www.tiktok.com/@grandmaerakaca"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 transition-transform"
             >
-              <img src={FacebookIcon} alt="Facebook" className="w-8 h-8" />
+              <img src={TiktokIcon} alt="Tiktok" className="w-8 h-8" />
             </a>
           </div>
         </div>
