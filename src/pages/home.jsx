@@ -9,9 +9,9 @@ import Logo from "../images/logo.png";
 import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
-import beranda1 from "../images/beranda1.jpg";
-import beranda2 from "../images/beranda2.jpg";
-import beranda3 from "../images/beranda3.jpg";
+import beranda1 from "../images/beranda1.png";
+import beranda2 from "../images/gambar4.png";
+import beranda3 from "../images/beranda3.png";
 import peta from "../images/peta.png";
 AOS.init({ duration: 1000, once: false });
 
@@ -84,6 +84,7 @@ const Header = () => (
   </header>
 );
 
+
 const Main = () => {
   const navigate = useNavigate();
 
@@ -128,13 +129,12 @@ const Main = () => {
       <section className="p-6 bg-white shadow-lg rounded-lg" data-aos="fade-up">
         <h3 className="text-red-700 font-semibold text-2xl mb-4">Tentang</h3>
         <p className="text-md text-gray-800 leading-relaxed">
-          Grand Maerakaca, sebelumnya dikenal sebagai Puri Maerokoco, adalah
-          taman miniatur Jawa Tengah yang menampilkan anjungan dari 35 kabupaten
-          dan kota di provinsi tersebut. Sejak berganti nama pada tahun 2016,
-          Grand Maerakaca telah menambahkan fasilitas seperti area hutan bakau
-          dengan jalur trekking di atas air yang mengelilingi sisi utara kawasan
-          ini. Pada akhir pekan, biasanya terdapat pertunjukan musik live di
-          sekitar anjungan Kota Semarang untuk menghibur pengunjung.
+          Grand Maerakaca adalah taman rekreasi dan edukasi yang terletak di
+          Semarang, Jawa Tengah. Sebagai bagian dari kawasan PRPP, tempat ini
+          menampilkan 35 anjungan rumah adat dari seluruh kabupaten dan kota di
+          Jawa Tengah, lengkap dengan hasil kerajinan khas daerah. Fasilitas
+          lainnya meliputi wahana rekreasi air, trekking mangrove, dan spot foto
+          bertema internasional di Lumina Grand Maerakaca.
         </p>
       </section>
 
@@ -229,8 +229,10 @@ const Footer = () => (
             </a>
           </div>
         </div>
-        <div>
-          <h3 className="text-lg font-bold mb-2 text-center">Kontak Kami</h3>
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-bold">Kontak Kami</h3>
+        </div>
+        <div className="mr-7">
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
             <li>Whatsapp: +6281329000157</li>

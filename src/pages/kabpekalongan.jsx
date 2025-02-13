@@ -15,8 +15,8 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import AnjunganImage from "../images/kabpekalongan/anjungan-kabpekalongan.jpg";
-import Segomegono from "../images/kabpekalongan/segomegono.png";
+import AnjunganImage from "../images/kabpekalongan/anjungan-kabpekalongan.png";
+import Mangrove from "../images/kabpekalongan/mangrove.png";
 import Kupatan from "../images/kabpekalongan/kupatan.png";
 import Budaya from "../images/kabpekalongan/budaya.png";
 
@@ -27,7 +27,7 @@ const Header = () => (
     <div
       className="absolute inset-0 rounded-b-xl"
       style={{
-        backgroundImage: `url(${BatikBackground})`,
+        backgroundImage: `linear-gradient(to right, rgba(120, 0, 0, 0.7), rgba(255, 60, 0, 0.7)), url(${BatikBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         filter: "blur(1px)",
@@ -36,7 +36,7 @@ const Header = () => (
     ></div>
     <div
       className="absolute inset-0 z-0"
-      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.)" }}
     ></div>
 
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
@@ -58,7 +58,7 @@ const BackButton = () => {
   const navigate = useNavigate();
   return (
     <button
-      onClick={() => navigate("/home")}
+      onClick={() => navigate("/")}
       className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
     >
       ←
@@ -146,8 +146,10 @@ const Footer = () => (
             </a>
           </div>
         </div>
-        <div>
-          <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-bold">Kontak Kami</h3>
+        </div>
+        <div className="mr-7">
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
             <li>Whatsapp: +6281329000157</li>
@@ -179,9 +181,9 @@ const Home = () => (
     <Header />
     <CitySection />
     <Section
-      title="Makanan Khas"
-      description="Sego megono, atau dikenal juga sebagai nasi megono, adalah hidangan khas Pekalongan yang terbuat dari nangka muda yang dicacah halus, kemudian dicampur dengan parutan kelapa dan diracik menggunakan bumbu rempah khas. Hidangan ini memiliki cita rasa gurih dan aroma yang harum, sehingga sering disajikan sebagai pelengkap nasi, terutama dalam acara tradisional atau sebagai menu sehari-hari. Rasanya yang autentik menjadikannya salah satu kuliner legendaris dari Pekalongan."
-      image={Segomegono}
+      title="Wisata"
+      description="Ekowisata Mangrove Mulyo Asri di Pekalongan, yang dulunya tambak udang dan sawah, kini menjadi hutan mangrove edukatif. Pengunjung dapat menikmati keindahan mangrove yang lebat, terutama saat senja, sambil belajar tentang manfaat dan pelestariannya."
+      image={Mangrove}
     />
     <Section
       title="Tradisi"

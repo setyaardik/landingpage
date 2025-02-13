@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop"; // ✅ Import komponen
 import KotaSemarang from "./pages/kotasemarang";
 import KabPemalang from "./pages/kabpemalang";
 import KabPurbalingga from "./pages/kabpurbalingga";
@@ -38,6 +39,7 @@ import Home from "./pages/home";
 
 const App = () => (
   <Router>
+    <ScrollToTop /> {/* ✅ Tambahkan komponen ini di dalam Router */}
     <Routes>
       <Route path="/kabsemarang" element={<KabSemarang />} />
       <Route path="/kotasemarang" element={<KotaSemarang />} />
@@ -73,7 +75,7 @@ const App = () => (
       <Route path="/kotamagelang" element={<KotaMagelang />} />
       <Route path="/kabsukoharjo" element={<KabSukaharjo />} />
       <Route path="/kabgrobogan" element={<KabGrobogan />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   </Router>
 );

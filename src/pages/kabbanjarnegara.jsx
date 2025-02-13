@@ -10,7 +10,7 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import AnjunganImage from "../images/kabbanjarnegara/anjungan-kabbanjarnegara.jpg";
+import AnjunganImage from "../images/kabbanjarnegara/anjungan-kabbanjarnegara.png";
 import Krandegan from "../images/kabbanjarnegara/krandegan.png";
 import Suran from "../images/kabbanjarnegara/suran.png";
 import Wisata from "../images/kabbanjarnegara/wisata.png";
@@ -21,7 +21,7 @@ const BackButton = () => {
   const navigate = useNavigate();
   return (
     <button
-      onClick={() => navigate("/home")}
+      onClick={() => navigate("/")}
       className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
     >
       ←
@@ -34,7 +34,7 @@ const Header = () => (
     <div
       className="absolute inset-0 rounded-b-xl"
       style={{
-        backgroundImage: `url(${BatikBackground})`,
+        backgroundImage: `linear-gradient(to right, rgba(120, 0, 0, 0.7), rgba(255, 60, 0, 0.7)), url(${BatikBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         filter: "blur(1px)",
@@ -43,7 +43,7 @@ const Header = () => (
     ></div>
     <div
       className="absolute inset-0 z-0"
-      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.)" }}
     ></div>
 
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
@@ -140,8 +140,10 @@ const Footer = () => (
             </a>
           </div>
         </div>
-        <div>
-          <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-bold">Kontak Kami</h3>
+        </div>
+        <div className="mr-7">
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
             <li>Whatsapp: +6281329000157</li>

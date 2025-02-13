@@ -27,16 +27,16 @@ const Header = () => (
     <div
       className="absolute inset-0 rounded-b-xl"
       style={{
-        backgroundImage: `url(${BatikBackground})`,
+        backgroundImage: `linear-gradient(to right, rgba(120, 0, 0, 0.7), rgba(255, 60, 0, 0.7)), url(${BatikBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        filter: "blur(1.5px)",
+        filter: "blur(1px)",
         zIndex: 0,
       }}
     ></div>
     <div
       className="absolute inset-0 z-0"
-      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.)" }}
     ></div>
 
     <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
@@ -47,11 +47,9 @@ const Header = () => (
           alt="Logo PTPP Jawa Tengah"
           className="rounded-full w-12 h-12 object-cover"
         />
-        <div className="bg-black bg-opacity-45 py-0.1 px-1 rounded-lg">
         <h1 className="text-2xl font-semibold drop-shadow-lg">
           Grand Maerakaca
         </h1>
-        </div>
       </div>
     </div>
   </header>
@@ -61,7 +59,7 @@ const BackButton = () => {
   const navigate = useNavigate();
   return (
     <button
-      onClick={() => navigate("/home")}
+      onClick={() => navigate("/")}
       className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
     >
       ←
@@ -143,8 +141,10 @@ const Footer = () => (
             </a>
           </div>
         </div>
-        <div>
-          <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-bold">Kontak Kami</h3>
+        </div>
+        <div className="mr-7">
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
             <li>Whatsapp: +6281329000157</li>

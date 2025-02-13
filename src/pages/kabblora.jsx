@@ -15,7 +15,7 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import AnjunganImage from "../images/kabblora/anjungan-kabblora.jpg";
+import AnjunganImage from "../images/kabblora/anjungan-kabblora.png";
 import Krandegan from "../images/kabblora/sate.png";
 import Barongan from "../images/kabblora/barongan.png";
 import Goa from "../images/kabblora/goa.png";
@@ -27,7 +27,7 @@ const Header = () => (
     <div
       className="absolute inset-0 rounded-b-xl"
       style={{
-        backgroundImage: `url(${BatikBackground})`,
+        backgroundImage: `linear-gradient(to right, rgba(120, 0, 0, 0.7), rgba(255, 60, 0, 0.7)), url(${BatikBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         filter: "blur(1px)",
@@ -36,7 +36,7 @@ const Header = () => (
     ></div>
     <div
       className="absolute inset-0 z-0"
-      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.)" }}
     ></div>
 
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
@@ -58,7 +58,7 @@ const BackButton = () => {
   const navigate = useNavigate();
   return (
     <button
-      onClick={() => navigate("/home")}
+      onClick={() => navigate("/")}
       className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
     >
       ←
@@ -83,12 +83,14 @@ const CitySection = () => (
         />
       </div>
       <p className="text-lg leading-relaxed bg-white bg-opacity-80 text-gray-800 rounded-lg p-4">
-        Kabupaten Banjarnegara berdiri pada 26 Februari 1571, ketika Raden Joko
-        Kaiman membagi wilayah Wirasaba menjadi empat bagian setelah menerima
-        kekuasaan dari Sultan Hadiwijaya. Salah satu wilayah hasil pembagian
-        tersebut adalah Banjar Pertambakan, yang kemudian berkembang menjadi
-        cikal bakal Kabupaten Banjarnegara. Pembagian ini menandai awal
-        berdirinya Banjarnegara sebagai sebuah wilayah administratif.
+        Blora berasal dari kata Belor yang berarti lumpur, kemudian berkembang
+        menjadi Mbeloran yang sekarang lebih dikenal dengan nama Blora. 11
+        Desember diperingati sebagai hari lahir Kabupaten Brora, yang secara
+        tidak langsung mengakui bahwa tanggal 11 Desember 1749 adalah hari ulang
+        tahunnya.Pada abad ke-16, Blora masuk ke dalam Kerajaan Jipang yang saat
+        itu masih berada di bawah kekuasaan Kerajaan Demak. Adipati Zipan pada
+        waktu itu bernama Arya Penangsang atau lebih dikenal Aria Jipang, Pati,
+        Lasem, Blora, dan Zipang sendiri.
       </p>
     </div>
   </div>
@@ -145,8 +147,10 @@ const Footer = () => (
             </a>
           </div>
         </div>
-        <div>
-          <h3 className="text-lg font-bold mb-2">Kontak Kami</h3>
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-bold">Kontak Kami</h3>
+        </div>
+        <div className="mr-7">
           <ul className="text-gray-300">
             <li>Telepon: 024-7617433</li>
             <li>Whatsapp: +6281329000157</li>

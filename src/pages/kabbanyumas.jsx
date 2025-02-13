@@ -15,7 +15,7 @@ import InstagramIcon from "../images/instagram-icon.png";
 import FacebookIcon from "../images/facebook-icon.png";
 import BatikBackground from "../images/batik-background.png";
 
-import AnjunganImage from "../images/kabbanyumas/anjungan-kabbanyumas.jpg";
+import AnjunganImage from "../images/kabbanyumas/anjungan-kabbanyumas.png";
 import Nopia from "../images/kabbanyumas/nopia.png";
 import Ebeg from "../images/kabbanyumas/tradisi.png";
 import Wisata from "../images/kabbanyumas/wisata.png";
@@ -26,7 +26,7 @@ const BackButton = () => {
   const navigate = useNavigate();
   return (
     <button
-      onClick={() => navigate("/home")}
+      onClick={() => navigate("/")}
       className="fixed bottom-4 left-4 bg-red-600 text-white p-3 rounded-full shadow-lg flex items-center justify-center hover:bg-red-700 transition-all"
     >
       ←
@@ -39,7 +39,7 @@ const Header = () => (
     <div
       className="absolute inset-0 rounded-b-xl"
       style={{
-        backgroundImage: `url(${BatikBackground})`,
+        backgroundImage: `linear-gradient(to right, rgba(120, 0, 0, 0.7), rgba(255, 60, 0, 0.7)), url(${BatikBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         filter: "blur(1px)",
@@ -48,7 +48,7 @@ const Header = () => (
     ></div>
     <div
       className="absolute inset-0 z-0"
-      style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.)" }}
     ></div>
 
     <div className="relative z-10 container mx-auto flex items-center justify-between px-4">
